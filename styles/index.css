@@ -26,6 +26,7 @@ ul li {
     text-align: center;
     filter: Alpha(opacity=50);
     background: rgba(14, 87, 146, 0.7);
+    margin:5px;
 }
 ul li a {
 	color: #fff; 
