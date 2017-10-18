@@ -1,8 +1,16 @@
-.mj {
+html {
+	font-size: 62.5%;
+}
+body {
 	background: #68cdd5;
+}
+img {
+	max-width: 100%;
+}
+.main {
 	color:#fff;
 	font-family: 'Microsoft Yahei';
-	width: 640px;
+	width: auto;
 	margin:0 auto;
 }
 .goback {
@@ -15,25 +23,23 @@
 	margin-top: 40px;
 	margin-bottom: 100px;
 }
-.info .intro {
-	font-size: 30px;
-	line-height: 54px;
+.info .introduction {
+	font-size: 3rem;
+	line-height: 5.4rem;
 	padding:0 14%;
-	margin-bottom: 148px;
 }
-.info ul {
+.info .contact {
 	margin:0;
 	padding: 0;
 	overflow: auto;
-	padding-bottom: 190px;
 }
-.info ul li {
+.info .contact li {
 	width: 50%;
 	display: inline-block;
 	text-align: center;
 	float: left;
 }
-.info ul li p {
-	font-size: 24px;
+.info .contact li p {
+	font-size: 2.4rem;
 	margin:10px 0;
 }
