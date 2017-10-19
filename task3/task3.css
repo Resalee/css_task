@@ -2,9 +2,6 @@
 	margin: 0; 
 	padding: 0
 }
-html {
-font-size: 62.5%!important; /* 10÷16=62.5% */
-}  
 body {
 	background: #68cdd5;
 	color:#fff;
@@ -15,22 +12,31 @@ img {
 }
 .goback {
 	text-align: left;
-	padding-top: 2rem;
-	padding-left: 3.4rem;
+	padding-top: 0.83rem;
+	padding-left: 1.4rem;
+}
+.goback a {
+	display: block;
+	width: 9%;
 }
 .logo {
 	text-align: center;
-	margin-top: 4rem;
-	margin-bottom: 10rem;
+	margin-top: 1.6rem;
+	margin-bottom: 4.1rem;
+}
+.logo a {
+	display: block;
+	width: 28%;
+	margin: 0 auto;
 }
 .content {
-	font-size: 3rem;
-	line-height: 5.4rem;
+	font-size: 1.25rem;
+	line-height: 2.25rem;
 	padding:0 14%;
 }
 .contact {
 	overflow: hidden;
-	padding: 16rem 0;
+	padding: 6.6rem 0;
 }
 .contact div {
 	width: 50%;
@@ -38,7 +44,28 @@ img {
 	text-align: center;
 	float: left;
 }
+.contact img {
+	width: 26.25%;
+}
 .contact p {
-	font-size: 2.4rem;
-	margin:1rem 0;
+	font-size: 1rem;
+	margin:0.4rem 0;
+}
+
+@media screen and (min-width:320px) {
+  html { font-size:75%;}
+}
+@media screen and (min-width:360px) {
+  html { font-size:87%;}
+}
+@media screen and (min-width:480px) {
+  html { font-size:112%;}
+
+}
+@media screen and (min-width:568px) {
+  html { font-size:131%;}
+
+}
+@media screen and (min-width:639px) {
+  html { font-size:150%;}
 }
