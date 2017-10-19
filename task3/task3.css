@@ -38,16 +38,17 @@ img {
 	overflow: hidden;
 	padding: 6.6rem 0;
 }
-.contact div {
+.contact dl {
 	width: 50%;
 	display: inline-block;
 	text-align: center;
 	float: left;
 }
-.contact img {
+.contact dd {
 	width: 26.25%;
+	margin: 0 auto;
 }
-.contact p {
+.contact dt {
 	font-size: 1rem;
 	margin:0.4rem 0;
 }
