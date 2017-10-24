@@ -74,19 +74,23 @@ main input {
 	height: 5rem;
 	line-height: 5rem;
 	margin-top: 0.8rem;
-	background-size: contain;
-	-webkit-background-size:contain;
-	-moz-background-size: contain;
-    -o-background-size: contain;
-	padding-left: 96px;
+	padding-left: 7.5rem;
 	display: block;
 	width: 100%;
 }
 .phonenumber {
 	background: #fff url(images/phonenumber.jpg) no-repeat left center;
+	background-size: contain;
+	-webkit-background-size:contain;
+	-moz-background-size: contain;
+    -o-background-size: contain;
 }
 .password {
 	background: #fff url(images/password.jpg) no-repeat left center;	
+	background-size: contain;
+	-webkit-background-size:contain;
+	-moz-background-size: contain;
+    -o-background-size: contain;
 }
 .submit {
 	background: #5fc0cd;
