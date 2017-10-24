@@ -74,7 +74,7 @@ main {
 	bottom: 0;
 }
 main input {
-	color: #e1e5e7;
+	color: #777;
 	font-size: 1.6rem;
 	height: 5rem;
 	line-height: 5rem;
@@ -83,6 +83,18 @@ main input {
 	display: block;
 	width: 100%;
 }
+input::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #e1e5e7; 
+} 
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: #e1e5e7; 
+} 
+input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color: #e1e5e7; 
+} 
+input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: #e1e5e7; 
+} 
 .phonenumber {
 	background: #fff url(images/phonenumber.jpg) no-repeat left center;
 	background-size: contain;
