@@ -82,6 +82,7 @@ main input {
 	padding-left: 7.5rem;
 	display: block;
 	width: 100%;
+	outline: none;
 }
 input::-webkit-input-placeholder { /* WebKit browsers */ 
 color: #e1e5e7; 
