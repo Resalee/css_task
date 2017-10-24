@@ -54,7 +54,7 @@ header h1 {
 	bottom: 0;
 	right: 0;
 }
-header div, header div a {
+header div a {
 	font-size: 1.6rem;
 	text-decoration: none;
 	color:#fff;
