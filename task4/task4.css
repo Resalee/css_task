@@ -75,6 +75,9 @@ main input {
 	line-height: 5rem;
 	margin-top: 0.8rem;
 	background-size: contain;
+	-webkit-background-size:contain;
+	-moz-background-size: contain;
+    -o-background-size: contain;
 	padding-left: 96px;
 	display: block;
 	width: 100%;
