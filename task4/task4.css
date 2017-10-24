@@ -12,9 +12,6 @@ body {
 	color:#fff;
 	font-family: 'Microsoft Yahei';
 }
-html,body,header,main {
-	width: 100%;
-}
 img {
 	max-width: 100%;
 }
@@ -40,8 +37,9 @@ img {
 header {
 	background: #5fc0cd;
 	line-height: 4.4rem;
-	position: relative;
 	height: 4.4rem;
+	position: fixed;
+	width: 100%;
 }
 header h1 {
 	font-size: 1.8rem;
@@ -68,6 +66,13 @@ header .register {
 	right: 2.08rem;
 }
 /**/
+main {
+	position: fixed;
+	top: 4.4rem;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
 main input {
 	color: #e1e5e7;
 	font-size: 1.6rem;
