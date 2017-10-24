@@ -116,6 +116,7 @@ color: #e1e5e7;
 	text-align: center;
 	padding:0;
 	margin-top: 3.5rem;
+	cursor: pointer;
 }
 .forgetpassword a{
 	text-align: right;
