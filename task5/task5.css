@@ -113,30 +113,33 @@ main {
 	padding-right: .5rem;
 }
 /*main-info*/
-.info {
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+.info {	
 	font-size: 1.6rem;
 	color: #333;
 }
-.info dt {
-	border-left: 2px solid #5fc0cd;
-	padding-left: 1.5rem;
-	line-height: 1.7rem;
-	margin-top: 1.7rem;
-	margin-bottom: 1.7rem;
-}
-.info dd {
+.info .skill {
 	padding-top: 1.7rem;
 	padding-bottom: 1.7rem;
 	border-bottom: 1px solid #e1e5e7;
 }
-.info dd span {
+.info h3 {
+	border-left: 2px solid #5fc0cd;
+	padding-left: 1.2rem;
+	line-height: 1.7rem;
+	margin-left: 1.5rem;
+}
+.info .feature {
+	padding-top: 1.7rem;
+	padding-bottom: 1.7rem;
+	border-bottom: 1px solid #e1e5e7;
+	margin-left: 1.5rem;
+}
+.info .feature span {
 	border-left: 1px solid #e1e5e7;
 	padding-left: 1rem;
 	margin-left: 1rem;
 }
-.info dd span:first-child {
+.info .feature span:first-child {
 	border-left: none;
 	padding-left: 0;
 	margin-left: 0;
@@ -146,22 +149,37 @@ main {
 	color: #e26163;
 	padding-right: .4rem;
 }
-.info strong {
+.info dl {
+	padding-top: 1.7rem;
+	padding-bottom: 1.7rem;
+	border-bottom: 1px solid #e1e5e7;
+	position: relative;
+	overflow: hidden;
+	line-height: 1.1;
+	margin-left: 1.5rem;
+}
+.info dt {
 	border-right: 1px solid #e1e5e7;
 	color:#999;
 	font-weight: normal;
 	padding-right: 1rem;
 	margin-right: 1rem;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.info dd {
+	float: left;
+	margin-left: 7.5rem;
 }
 .info em {
 	color: #e26163;
 	font-style: normal;
 }
-.info p {
+.info .introduction {
 	display: inline;
 	font-size: 1.4rem;
 	line-height: 1.1;
-	position: absolute;
 }
 /*footer*/
 footer {
