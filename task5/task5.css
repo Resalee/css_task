@@ -7,7 +7,7 @@
 html,
 body {
 	height: 100%;
-	font-size: 62.5%; /*1rem=10px*/
+	font-size: 625%; /*1rem=100px*/
 	color: #333;
 	font-family: "Microsoft Yahei", "STHeiti", "Hiragino Sans GB", "WenQuanYi Zen Hei", sans-serif;
 	background: #fff;
@@ -44,7 +44,7 @@ footer {
 header {
 	top: 0;
 	z-index: 1;	
-	height: 4rem;
+	height: .4rem;
 	background: #5fc0cd;
 }
 header h1 {
@@ -52,8 +52,8 @@ header h1 {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 1.8rem;
-	line-height: 4rem;
+	font-size: .18rem;
+	line-height: .4rem;
 	font-weight: 500;
 	text-align: center;
 	color: #fff;
@@ -61,82 +61,83 @@ header h1 {
 header .goback a{
 	display: block;
 	position: absolute;
-	left: 1.5rem;
-	font-size: 1.8rem;
-	line-height: 4rem;
+	left: .15rem;
+	font-size: .18rem;
+	line-height: .4rem;
 	color: #fff;
 }
 /*main-user*/
 main {
-	top: 4rem;
-	bottom: 5.9rem;
+	top: .4rem;
+	bottom: .59rem;
 	overflow: auto;
 }
 .user {
 	position: relative;
-	padding: 3.7rem 0;
-	height: 8.5rem;
+	padding: .37rem 0;
+	height: .85rem;
 	background: url(images/bg.jpg) no-repeat center;
 	background-size: cover; 
 }
 .user dd {
-	padding-left: 1.5rem;
-	width: 8.5rem;
-	height: 8.5rem;
+	padding-left: .15rem;
+	width: .85rem;
+	height: .85rem;
 }
 .user dd img {
+	display: block;
 	height: 100%;
 	border-radius: 50%;
 }
 .user dt {
 	position: absolute;
 	top: 50%;
-    left: 11.8rem;
+    left: 1.18rem;
     transform: translateY(-50%);
 	color: #fff;
 }
 .user dt h2 {
-	font-size: 1.8rem;
+	font-size: .18rem;
 	font-weight: 600;
 	line-height: 1.8;
 }
 .user h2 span {
-	padding-left: 1.6rem;
-	font-size: 1.4rem;
+	padding-left: .16rem;
+	font-size: .14rem;
 }
 .user dt p {
-	font-size: 1.2rem;
+	font-size: .12rem;
 } 
 .user .iconfont {
-	padding-right: .5rem;
-	font-size: 1.4rem;
+	padding-right: .05rem;
+	font-size: .14rem;
 	color: #5fc0cd;
 }
 /*main-info*/
 .info {	
-	font-size: 1.6rem;
+	font-size: .16rem;
 	color: #333;
 }
 .info .skill {
-	padding-top: 1.7rem;
-	padding-bottom: 1.7rem;
+	padding-top: .17rem;
+	padding-bottom: .17rem;
 	border-bottom: 1px solid #e1e5e7;
 }
 .info h3 {
-	margin-left: 1.5rem;
-	padding-left: 1.2rem;
+	margin-left: .15rem;
+	padding-left: .12rem;
 	border-left: 2px solid #5fc0cd;
 	line-height: 1;
 }
 .info .feature {
-	padding-top: 1.7rem;
-	padding-bottom: 1.7rem;
-	margin-left: 1.5rem;
+	padding-top: .17rem;
+	padding-bottom: .17rem;
+	margin-left: .15rem;
 	border-bottom: 1px solid #e1e5e7;
 }
 .info .feature span {
-	padding-left: 1rem;
-	margin-left: 1rem;
+	padding-left: .1rem;
+	margin-left: .1rem;
 	border-left: 1px solid #e1e5e7;
 }
 .info .feature span:first-child {
@@ -145,16 +146,16 @@ main {
 	border-left: none;
 }
 .info .iconfont {
-	padding-right: .4rem;
-	font-size: 1.4rem;
+	padding-right: .04rem;
+	font-size: .14rem;
 	color: #e26163;
 }
 .info dl {
 	position: relative;
 	overflow: hidden;
-	padding-top: 1.7rem;
-	padding-bottom: 1.7rem;
-	margin-left: 1.5rem;
+	padding-top: .17rem;
+	padding-bottom: .17rem;
+	margin-left: .15rem;
 	border-bottom: 1px solid #e1e5e7;
 	line-height: 1.1;
 }
@@ -162,15 +163,14 @@ main {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	padding-right: 1rem;
-	margin-right: 1rem;
+	padding-right: .1rem;
 	border-right: 1px solid #e1e5e7;
 	font-weight: 600;
 	color: #999;
 }
 .info dd {
-	float: left;
-	margin-left: 8.6rem;
+	display: inline-block;
+	margin-left: .86rem;
 }
 .info em {
 	font-style: normal;
@@ -178,8 +178,7 @@ main {
 	color: #e26163;
 }
 .info .introduction {
-	display: inline;
-	font-size: 1.4rem;
+	font-size: .14rem;
 	line-height: 1.1;
 }
 /*footer*/
@@ -187,8 +186,8 @@ footer {
 	position: absolute;
 	bottom: 0;
 	z-index: 1;
-	height: 5.9rem;
-	padding:0 1.5rem;
+	height: .59rem;
+	padding:0 .15rem;
 	background: #fff;
 }
 footer button {
@@ -199,11 +198,11 @@ footer button {
 }
 footer button a{
 	display: block;
-	margin: .7rem;
+	margin: .07rem;
 	border: 1px solid #5fc0cd;
 	border-radius: 5px;
-	font-size: 1.7rem;
-	line-height: 4.4rem;
+	font-size: .17rem;
+	line-height: .44rem;
 	text-align: center;
 }
 .message a{
