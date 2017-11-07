@@ -1,0 +1,44 @@
+/*通用*/
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+ /* font-size: 625%; *//*1rem=100px*/
+  color: #333;
+  font-family: "Microsoft Yahei", "STHeiti", "Hiragino Sans GB", "WenQuanYi Zen Hei", sans-serif;
+  background: #fff;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+header,
+main,
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+/*header*/
+header {
+  background: #5fc0cd;
+  top: 0;
+  height: .44rem;
+}
+/*main*/
+main {
+  top:.44rem;
+  overflow: auto;
+}
+/*footer*/
+footer {
+  background: #f8fafb;
+  bottom: 0;
+  height: .5rem;
+  border-top: 1px solid #e2eaec;
+}

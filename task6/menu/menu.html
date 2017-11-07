@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>css 下拉菜单demo</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style type="text/css">
+        iframe {width:100%;height: 300px;    border: 1px solid #ddd;
+    border-top: none;}
+    .info {margin:30px 0;}
+    </style>
+</head>
+
+<body>
+
+    <div class="container"> <div class="info">CSS下拉菜单说明：demo对应<a href="http://www.cnblogs.com/yewenxiang/p/6064117.html" target="_blank">文章地址</a></div>
+ <ul id="myTab" class="nav nav-tabs">
+    <li class="active">
+        <a href="#nav1" data-toggle="tab">二级display</a>
+    </li>
+    <li><a href="#nav2" data-toggle="tab">一级overflow</a></li>
+    <li><a href="#nav3" data-toggle="tab">二级opacity</a></li>
+    <li><a href="#nav4" data-toggle="tab">二级overflow</a></li>
+    <li><a href="#nav5" data-toggle="tab">二级position</a></li>
+
+</ul>
+<div id="myTabContent" class="tab-content">
+    <iframe class="tab-pane fade in active" id="nav1" src="menu1.html"> </iframe>
+    <iframe class="tab-pane fade" id="nav2" src="menu2.html"> </iframe>
+    <iframe class="tab-pane fade" id="nav3" src="menu3.html"> </iframe>
+    <iframe class="tab-pane fade" id="nav4" src="menu4.html"> </iframe>
+    <iframe class="tab-pane fade" id="nav5" src="menu5.html"> </iframe>
+</div>
+</div>
+<script>
+    $(function () {
+        $('#myTab li:eq(1) a').tab('show');
+    });
+</script>
+</body>
+
+</html>
