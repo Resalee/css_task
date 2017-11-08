@@ -99,7 +99,7 @@ nav {
 
 nav .btn-group {
     width: 32%;
-    background-position: 0 -2.27rem;
+    background-position: 0 -2.22rem;
 }
 
 nav .btn-group:first-child {
@@ -149,11 +149,11 @@ main .col-xs-12 span {
     padding-left: .2rem;
     font-size: .13rem;
     color: #999;
-    background-position: 0 -1.43rem;
+    background-position: 0 -1.44rem;
 }
 
 main .col-xs-12 span:first-child {
-    background-position: 0 -1.67rem;
+    background-position: 0 -1.68rem;
 }
 
 main .col-xs-12 .date {
@@ -227,17 +227,17 @@ footer .btn a {
 }
 
 footer .home a {
-    background-position: 0 -.36rem;
+    background-position: 0 -.35rem;
 }
 
 footer .on a {
     width: .2rem;
     height: .21rem;
     padding-top: 0;
-    background-position: 0 -.74rem;
+    background-position: 0 -.71rem;
 }
 
 footer .mine a {
     color: #999;
-    background-position: 0 -1.07rem;
+    background-position: 0 -1.04rem;
 }
