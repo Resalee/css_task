@@ -1,44 +1,243 @@
 /*通用*/
+
 * {
-  padding: 0;
-  margin: 0;
+    margin: 0;
+    padding: 0;
 }
+
+a:hover {
+    text-decoration: none;
+}
+
 html,
 body {
-  height: 100%;
- /* font-size: 625%; *//*1rem=100px*/
-  color: #333;
-  font-family: "Microsoft Yahei", "STHeiti", "Hiragino Sans GB", "WenQuanYi Zen Hei", sans-serif;
-  background: #fff;
+    height: 100%;
+    font-family: 'Microsoft Yahei', 'STHeiti', 'Hiragino Sans GB', 'WenQuanYi Zen Hei', sans-serif;
+    font-size: 625%;
+    color: #333;
+    background: #fff;
 }
-img {
-  max-width: 100%;
-}
-a {
-  text-decoration: none;
-}
+
 header,
+nav,
 main,
 footer {
     position: absolute;
     left: 0;
     right: 0;
+    font-size: .14rem;
 }
+
+header .city,
+nav .btn-group,
+main .col-xs-12 span,
+footer .btn a,
+main .col-xs-12 .price {
+    background-image: url(images/img.png);
+    background-repeat: no-repeat;
+    background-size: .23rem 2.6rem;
+}
+
+nav,
+.row {
+    border-bottom: 1px solid #e1e5e7;
+}
+
 /*header*/
+
 header {
-  background: #5fc0cd;
-  top: 0;
-  height: .44rem;
+    top: 0;
+    height: .44rem;
+    background: #5fc0cd;
 }
+
+header .btn-group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .btn-group .btn {
+    padding: 0 .1rem;
+    font-size: .17rem;
+    line-height: .34rem;
+}
+
+header .btn-group .btn-primary {
+    border: 1px solid #55a8b3;
+    background: #55a8b3;
+}
+
+header .btn-group .btn-success {
+    margin-left: -.04rem !important;
+    border: 1px solid #fff;
+    border-top-left-radius: .04rem !important;
+    border-bottom-left-radius: .04rem !important;
+    color: #5fc0cd;
+    background: #fff;
+}
+
+header .city {
+    position: absolute;
+    top: 50%;
+    right: .15rem;
+    transform: translateY(-50%);
+    width: .21rem;
+    height: .22rem;
+    background-position: 0 0;
+}
+
+
+/*nav*/
+
+nav {
+    top: .44rem;
+    height: .4rem;
+    background: #fff;
+}
+
+nav .btn-group {
+    width: 32%;
+    background-position: 0 -2.15rem;
+}
+
+nav .btn-group:first-child {
+    background: none;
+}
+
+nav .btn-group .btn {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    line-height: .4rem;
+    color: #999;
+    background: none;
+}
+
+nav .btn-group .caret {
+    position: absolute;
+    top: 50%;
+    right: .06rem;
+    margin-top: -2px;
+    border-top: 4px solid #999;
+}
+
+nav .dropdown-menu {
+    width: 100%;
+    min-width: 1rem;
+}
+
+nav .dropdown-menu>li>a {
+    color: #999;
+}
+
+
 /*main*/
+
 main {
-  top:.44rem;
-  overflow: auto;
+    top: .84rem;
+    bottom: .5rem;
+    overflow: auto;
+    line-height: .17rem;
 }
+
+main .col-xs-12 span {
+    display: block;
+    clear: both;
+    margin: .1rem 0;
+    padding-left: .2rem;
+    font-size: .13rem;
+    color: #999;
+    background-position: 0 -1.41rem;
+}
+
+main .col-xs-12 span:first-child {
+    background-position: 0 -1.64rem;
+}
+
+main .col-xs-12 .date {
+    float: left;
+    overflow: hidden;
+    width: 65%;
+    padding-left: .2rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #333;
+}
+
+main .col-xs-12 .price {
+    float: right;
+    overflow: hidden;
+    width: 35%;
+    padding-right: .2rem;
+    text-align: right;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background-position: right -1.92rem;
+}
+
+main .col-xs-12 .price a {
+    font-size: .15rem;
+    color: #e63b0e;
+}
+
+
 /*footer*/
+
 footer {
-  background: #f8fafb;
-  bottom: 0;
-  height: .5rem;
-  border-top: 1px solid #e2eaec;
+    bottom: 0;
+    height: .5rem;
+    border-top: 1px solid #e2eaec;
+    background: #f8fafb;
+}
+
+footer .btn {
+    position: absolute;
+    top: 50%;
+    padding: 0 .135rem;
+    background: none;
+}
+
+footer .home {
+    left: .6rem;
+    transform: translateY(-50%);
+}
+
+footer .on {
+    left: 50%;
+    width: .47rem;
+    height: .47rem;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #5fc0cd;
+}
+
+footer .mine {
+    right: .6rem;
+    transform: translateY(-50%);
+}
+
+footer .btn a {
+    display: block;
+    width: .23rem;
+    padding-top: .27rem;
+    font-size: .1rem;
+    color: #5fc0cd;
+}
+
+footer .home a {
+    background-position: 0 -.36rem;
+}
+
+footer .on a {
+    width: .2rem;
+    height: .21rem;
+    padding-top: 0;
+    background-position: 0 -.74rem;
+}
+
+footer .mine a {
+    color: #999;
+    background-position: 0 -1.07rem;
 }
