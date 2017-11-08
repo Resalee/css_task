@@ -1,10 +1,9 @@
-.img{background:url(../images/img.png)  no-repeat;background-size:23px 126px}
-.pull{height:4px;width:6px;background-position:-95px 0;}
-.info{height:16px;width:9px;background-position:-76px 0;}
-.position{height:11px;width:9px;background-position:-56px 0;}
-.date{height:12px;width:12px;background-position:-32px 0;}
-.write{height:20px;width:20px;background-position:-31px -32px;}
+.img{background:url(../images/img.png)  no-repeat;background-size:23px 162px}
+.line{height:39px;width:0px;background-position:0 -215px;}
+.info{height:16px;width:9px;background-position:0 -189px;}
+.position{height:11px;width:9px;background-position:0 -142px;}
+.date{height:12px;width:12px;background-position:0 -163px;}
+.write{height:20px;width:20px;background-position:0 -72px;}
 .site{height:22px;width:21px;background-position:0 0;}
-.people{height:20px;width:21px;background-position:-60px -31px;}
-.home{height:20px;width:23px;background-position:0 -32px;}
-
+.people{height:20px;width:21px;background-position:0 -107px;}
+.home{height:20px;width:23px;background-position:0 -36px;}
