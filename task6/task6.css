@@ -99,7 +99,7 @@ nav {
 
 nav .btn-group {
     width: 32%;
-    background-position: 0 -2.15rem;
+    background-position: 0 -2.27rem;
 }
 
 nav .btn-group:first-child {
@@ -149,11 +149,11 @@ main .col-xs-12 span {
     padding-left: .2rem;
     font-size: .13rem;
     color: #999;
-    background-position: 0 -1.41rem;
+    background-position: 0 -1.43rem;
 }
 
 main .col-xs-12 span:first-child {
-    background-position: 0 -1.64rem;
+    background-position: 0 -1.67rem;
 }
 
 main .col-xs-12 .date {
@@ -174,7 +174,7 @@ main .col-xs-12 .price {
     text-align: right;
     white-space: nowrap;
     text-overflow: ellipsis;
-    background-position: right -1.92rem;
+    background-position: right -1.94rem;
 }
 
 main .col-xs-12 .price a {
