@@ -1,0 +1,149 @@
+/*通用*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Microsoft Yahei', 'STHeiti', 'Hiragino Sans GB', 'WenQuanYi Zen Hei', sans-serif;
+    font-size: 625%;
+}
+
+html,
+body {
+    height: 100%;
+    background: #f0f0f0;
+}
+
+header,
+main {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+header .menu,
+main .lastgame a {
+    background-image: url(images/img.png);
+    background-repeat: no-repeat;
+    background-size: 1.79rem 1.5rem;
+}
+
+
+/*header*/
+
+header {
+    top: 0;
+    height: .4rem;
+    padding: 0 .11rem;
+    background: #29bde0;
+}
+
+header .menu {
+    position: absolute;
+    bottom: .11rem;
+    display: block;
+    width: .17rem;
+    height: .135rem;
+    background-position: 0 0;
+}
+
+
+/**/
+
+main {
+    top: .4rem;
+    bottom: 0;
+    overflow: auto;
+    padding-left: .18rem;
+    padding-right: .18rem;
+}
+
+.content {
+    position: relative;
+}
+
+.lastgame {
+    margin: .13rem 0;
+    padding: 0 .07rem;
+    border: 1px solid #d0d0d0;
+    background: #fff;
+}
+
+.lastgame a {
+    display: block;
+    text-align: center;
+    font-size: .17rem;
+    line-height: .58rem;
+    color: #9a9a9a;
+    background-position: right -.62rem;
+}
+
+.games {
+    background: #fff;
+    border: 1px solid #d0d0d0;
+}
+
+.games .cur h3 {
+    margin: 0;
+    border-bottom: 1px solid #fbb435;
+    text-align: center;
+    font-size: .19rem;
+    line-height: .45rem;
+    color: #fbb435;
+}
+
+.games ul {
+    padding: .05rem .27rem;
+    list-style: none;
+}
+
+.games li h4 a {
+    display: block;
+    text-align: center;
+    font-size: .16rem;
+    line-height: .78rem;
+    color: #fff;
+    background: #69d1e9;
+}
+
+.games li p {
+    text-align: center;
+    font-size: .12rem;
+    color: #787878;
+}
+
+.slide {
+    margin-top: -.25rem;
+    text-align: center;
+}
+
+.slide li {
+    display: inline-block;
+    width: .09rem;
+    height: .09rem;
+    border-radius: 50%;
+    background: #f0f0f0;
+    cursor: pointer;
+}
+
+.slide .on {
+    background: #69d1e9;
+}
+
+.next {
+    position: absolute;
+    right: .05rem;
+    top: 48%;
+    width: 0;
+    height: 0;
+    border-width: .14rem 0 .14rem .14rem;
+    border-color: transparent #fbb435;
+    border-style: solid;
+    cursor: pointer;
+}
