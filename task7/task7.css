@@ -4,8 +4,11 @@
     margin: 0;
     padding: 0;
 }
-
-a:hover {
+a,
+a:active,
+a:hover,
+a:focus,
+a:visited {
     text-decoration: none;
 }
 
@@ -21,14 +24,17 @@ body {
 }
 
 header,
-main {
+main,
+footer {
     position: absolute;
     left: 0;
     right: 0;
 }
 
-header .menu,
-main .lastgame a {
+header a,
+main .lastgame a,
+.player .action a
+{
     background-image: url(images/img.png);
     background-repeat: no-repeat;
     background-size: 1.79rem 1.5rem;
@@ -44,7 +50,7 @@ header {
     background: #29bde0;
 }
 
-header .menu {
+header a {
     position: absolute;
     bottom: .11rem;
     display: block;
