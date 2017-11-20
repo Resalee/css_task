@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
 }
+
 a,
 a:active,
 a:hover,
@@ -33,12 +34,12 @@ footer {
 
 header a,
 main .lastgame a,
-.player .action a
-{
+.player .action a {
     background-image: url(images/img.png);
     background-repeat: no-repeat;
     background-size: 1.79rem 1.5rem;
 }
+
 
 
 /*header*/
@@ -58,6 +59,7 @@ header a {
     height: .135rem;
     background-position: 0 0;
 }
+
 
 
 /**/
