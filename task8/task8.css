@@ -73,11 +73,7 @@ footer {
 .navbar-default {
     background-color: #29b078;
     border:none;
-}
-
-.navbar-collapse {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 15px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -106,6 +102,7 @@ footer {
         height: auto;
         line-height: .6rem;
     }
+    .navbar-default {padding-left: 0;}
     .navbar-collapse {
         border-top: none;
     }
