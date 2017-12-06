@@ -1,0 +1,377 @@
+/*通用*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:active,
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Microsoft Yahei', 'STHeiti', 'Hiragino Sans GB', 'WenQuanYi Zen Hei', sans-serif;
+    font-size: 625%;
+}
+
+html,
+body {
+    height: 100%;
+    background: #f0f0f0;
+}
+
+header,
+main,
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+/*header*/
+/*welcome*/
+.welcome {
+    line-height: .4rem;
+    background: #fff;
+    color: #29b078;
+}
+.welcome .social {
+display: inline-block;
+text-align: right;
+}
+.welcome .social a {
+    margin-left: .14rem;
+}
+/*logo*/
+.header {
+    height: 1rem;
+    line-height: .96rem;
+     background: #29b078;
+}
+/*nav*/
+.nav {
+    text-align: right;
+}
+.nav li {
+    display: inline-block;
+}
+.nav li a {
+    height: 1rem;
+    padding: 0 .32rem;
+    font-size: .16rem;
+    color: #fff;
+}
+.nav .cur a, .nav li a:hover, .nav li a:focus{
+    border-bottom: .04rem solid #fff;
+    background-color: #29b078;
+}
+@media screen and (max-width: 600px) {
+
+}
+/**/
+.breadcrumb {
+    background: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.breadcrumb li {
+    font-size: .16rem;
+    line-height: .8rem;
+}
+
+.breadcrumb li a {
+    color: #333;
+}
+
+.breadcrumb>li+li:before {
+    color: #333;
+    content: ">";
+}
+
+.breadcrumb .active {
+    color: #29b078;
+}
+
+/*main*/
+.main {
+    background: #fafafa;
+}
+/*feature*/
+.feature {
+    margin-top: 1.6rem;
+    text-align: center;
+}
+.feature img {
+    display: inline-block;
+}
+.feature h4 {
+    font-size: .18rem;
+    color: #333;
+    line-height: .5rem;
+}
+.feature p {
+    font-size: .16rem;
+    text-align: left;
+    color: #999;
+}
+.feature div {
+    padding-right: 3%;
+}
+.feature .count {
+    padding-right: 0;
+    padding-left: 3%;
+    padding-top: 2.3%;
+    padding-bottom: 3%;
+    border-left: 1px dashed #dedede;
+}
+.feature h5 {
+    margin-top: .26rem;
+    padding-left: .2rem;
+    font-size: .18rem;
+    text-align: left;
+    background: url(images/people.png) no-repeat left center;
+    color: #29b078;
+}
+.feature .count p{
+    font-size: .18rem;
+}
+@media screen and (max-width: 992px) {
+    .feature {margin-top: .6rem;}
+    .feature .count {border-left: none;}
+}
+/*learn*/
+.main h3 {
+    font-size: .18rem;
+    text-align:center;
+    font-weight: 900;
+    clear: both;
+}
+.learn {
+    margin-right: -.3rem;
+}
+.learn h3 {
+    margin-top: .9rem;
+    margin-bottom: .3rem;
+}
+.learn h4 {
+    float: left;
+    width: .7rem;
+    height: .7rem;
+    margin-right: .16rem;
+    border: 1px solid #e4e4e4;
+    border-radius: 50%;
+    box-shadow: 0 0 3px #e4e4e4;
+    text-align: center;
+    font-size: .18rem;
+    line-height: .7rem;
+    background: #fff;
+    color: #29b078;
+}
+.learn p {
+    float: left;
+    width: calc(100% - 1.1rem);
+    padding-right: .3rem;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+.learn .row div {
+        height: .9rem;
+    margin: .3rem 0;
+    background: url(images/jt.png) no-repeat right center;
+}
+.learn div:nth-child(4n) {
+background: none;
+}
+@media screen and (max-width: 992px) {
+   .learn div:nth-child(4) {
+background: url(images/jt.png) no-repeat right center;;
+}
+.learn div:nth-child(8) {
+    background: none;
+}
+
+}
+/*student*/
+.students {
+    margin:0 -.05rem;
+}
+.students h3 {
+    margin: .6rem;
+}
+.students .student {
+    text-align: center;
+    background: #fff;
+    padding:.2rem .3rem;
+    margin: 0 .05rem;
+        border-radius: 6px;
+    box-shadow: 0 0 4px #eeeded;
+    border: 1px solid #eeeded;
+}
+.students img {
+    width: 1.08rem;
+    height: 1.08rem;
+    border-radius: 50%;
+}
+.student h4 {
+    color: #333;
+    font-size: .18rem;
+    font-weight: 500;
+    margin:.36rem 0 .23rem 0;
+}
+.student p {
+    font-size: .16rem;
+    color: #999;
+    line-height: .26rem;
+    text-align: left;
+}
+@media screen and (max-width: 992px) {
+.students .student{margin-bottom: .4rem;}
+}
+/*partner*/
+.col-lg-1-5, .col-md-1-5 {
+    min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .col-sm-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-1-5 {
+    width:20%;
+    float: left;
+  }
+}
+
+.partner .row{
+margin-bottom: .9rem;
+}
+.partner h3 {
+    margin:1.3rem 0 .6rem 0;
+}
+.partner .row div {
+    padding-left: 0;
+    padding-right: 0;
+}
+.partner .row div img{
+    box-shadow: 0 0 3px #e2e2e2;
+    width: 100%;
+}
+.partner .row div:hover img{
+    box-shadow: 0 0 10px #e2e2e2;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+@media screen and (max-width: 992px) {
+.partner h3{margin-top: .6rem;}
+}
+/*links*/
+.links {
+    background: #fff;
+}
+.links h3 {
+    font-size: .18rem;
+    text-align:center;
+    font-weight: 900;
+    margin: .2rem 0;
+}
+.links ul {
+    margin-left: -.24rem;
+    margin-right: -.24rem;
+    margin-bottom: .14rem;
+}
+.links ul li {
+    display: inline-block;
+    padding-left: .14rem;
+    background: url(images/disc.png) no-repeat left center;
+    margin-right: .24rem;
+    margin-left: .24rem;
+    line-height: .30rem;
+    border-bottom: 1px solid transparent;
+}
+.links ul li a {
+    color: #999;
+}
+.links ul li:hover {
+border-bottom: 1px solid #29b078;
+}
+/*footer*/
+.footer {
+    background: #29b078;
+    color: #fff;
+}
+.footer .container {
+    margin:.2rem auto .1rem auto;
+}
+.footer h3 {
+font-size: .16rem;
+}
+.footer ul li {
+    display: inline-block;
+}
+.footer ul li a {
+    color: #fff;
+}
+.about {
+    margin-top: .6rem;
+}
+.about li {
+    border-left: 2px solid #fff;
+    line-height: .14rem;
+    padding-left: .1rem;
+    padding-right: .1rem;
+}
+.about li:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+.websites li {
+    margin-right: .36rem;
+    border-bottom: 1px solid transparent;
+    line-height: .24rem;
+    margin-top: .12rem;
+}
+.websites li:hover{
+    margin-right: .36rem;
+    border-bottom: 1px solid #fff;
+}
+.wx {
+    text-align: right;
+}
+.copyright {
+    background: #29b078;
+        text-align: center;
+    line-height: .3rem;
+    border-top: 1px solid #32c086;
+    color: #fff;
+}
+.copyright a {
+    color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+.footer h3 {
+    font-size: .15rem;}
+}
+

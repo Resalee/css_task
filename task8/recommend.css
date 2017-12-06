@@ -1,0 +1,67 @@
+
+.banner img {
+    width: 100%;
+    text-align: center;
+}
+/**/
+
+.main {
+    padding-bottom: .4rem;
+}
+/**/
+.company, .tab-content {
+    box-shadow: 0 0 3px #e6e6e6;
+    border-radius: 3px;
+    background: #fff;
+}
+.company h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: .16rem;
+    text-align: center;
+    line-height: .6rem;
+}
+.company ul{
+    width: .9rem;
+    margin: 0 auto;
+    padding-top: .15rem;
+    padding-bottom: .2rem;
+    list-style: none;
+}
+.company li a{
+    color:#29b078;
+    line-height: .5rem;
+    background: url(images/gs.png) no-repeat left center;
+    padding-left: .16rem;
+}
+.company li a:hover, .company li a:focus {
+    background: url(images/gs_hover.png) no-repeat left center;
+    color: #ff650e;
+}
+/**/
+.tab-pane p {
+        color: #999;
+    font-weight: 400;
+    line-height: .26rem;
+    text-align: justify;
+}
+.tab-pane dl {
+    padding:.25rem 6% .16rem 6%;
+    border-bottom: 1px solid #e6e6e6;
+    overflow: hidden;
+}
+.tab-pane dl dd {
+    float: left;
+    width: 20%;
+}
+.tab-pane dl dt {
+    float: right;
+    width: 76%;
+}
+.tab-pane .moreinfo {
+    padding:.2rem 6% 1rem;
+}
+.tab-pane .moreinfo p {
+    margin-bottom: .2rem;
+    text-indent: 2em;
+}
