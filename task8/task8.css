@@ -64,7 +64,7 @@ footer {
 
 .header {
     height: 1rem;
-    line-height: .95rem;
+    line-height: .96rem;
     background: #29b078;
 }
 
@@ -72,7 +72,7 @@ footer {
 
 .navbar-default {
     background-color: #29b078;
-    border-color: #29b078;
+    border:none;
 }
 
 .navbar-collapse {
@@ -83,7 +83,7 @@ footer {
 .navbar-default .navbar-nav>li>a {
     padding: 0 .32rem;
     font-size: .16rem;
-    line-height: .95rem;
+    line-height: .96rem;
     color: #fff;
 }
 
@@ -101,7 +101,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .header {
         height: auto;
         line-height: .6rem;
