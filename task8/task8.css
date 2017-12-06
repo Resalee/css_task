@@ -34,49 +34,131 @@ footer {
 
 /*header*/
 /*welcome*/
+
 .welcome {
     line-height: .4rem;
     background: #fff;
     color: #29b078;
 }
+
 .welcome .social {
-display: inline-block;
-text-align: right;
+    display: inline-block;
+    text-align: right;
 }
+
 .welcome .social a {
     margin-left: .14rem;
 }
+
+@media screen and (max-width: 420px) {
+    .welcome .social {
+        display: none;
+    }
+    .welcome .col-xs-6 {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
 /*logo*/
+
 .header {
     height: 1rem;
-    line-height: .96rem;
-     background: #29b078;
+    line-height: .95rem;
+    background: #29b078;
 }
+
 /*nav*/
-.nav {
-    text-align: right;
+
+.navbar-default {
+    background-color: #29b078;
+    border-color: #29b078;
 }
-.nav li {
-    display: inline-block;
+
+.navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
 }
-.nav li a {
-    height: 1rem;
+
+.navbar-default .navbar-nav>li>a {
     padding: 0 .32rem;
     font-size: .16rem;
+    line-height: .95rem;
     color: #fff;
 }
-.nav .cur a, .nav li a:hover, .nav li a:focus{
+
+.nav .cur a,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
     border-bottom: .04rem solid #fff;
     background-color: #29b078;
+    color: #fff;
 }
-@media screen and (max-width: 600px) {
 
+@media screen and (min-width: 768px) {
+    .navbar-nav {
+        float: right;
+    }
 }
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: auto;
+        line-height: .6rem;
+    }
+    .navbar-collapse {
+        border-top: none;
+    }
+    .navbar {
+        margin-bottom: 0;
+    }
+    .navbar-toggle {
+        margin-top: 10px;
+        margin-bottom: 6px;
+        margin-right: 0;
+        padding: 9px 0;
+    }
+
+    .navbar-default .navbar-toggle {
+        border: none;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+    .navbar-toggle .icon-bar {
+        width: 30px;
+        height: 3px;
+        margin-bottom: 6px;
+        border-radius: 0;
+    }
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background: none;
+    }
+    .navbar-default .navbar-toggle:focus .icon-bar,
+    .navbar-default .navbar-toggle:hover .icon-bar {
+        background-color: #267f5a;
+    }
+    .navbar-default .navbar-nav>li>a {
+        padding: 0;
+        font-size: .16rem;
+        text-align: center;
+        line-height: .5rem;
+    }
+    .nav .cur a,
+    .navbar-default .navbar-nav>li>a:focus,
+    .navbar-default .navbar-nav>li>a:hover {
+        border-bottom: 1px solid #fff;
+    }
+}
+
+
 /**/
+
 .breadcrumb {
-    background: none;
     padding: 0;
     margin-bottom: 0;
+    background: none;
 }
 
 .breadcrumb li {
@@ -97,31 +179,41 @@ text-align: right;
     color: #29b078;
 }
 
+
 /*main*/
+
 .main {
     background: #fafafa;
 }
+
+
 /*feature*/
+
 .feature {
     margin-top: 1.6rem;
     text-align: center;
 }
+
 .feature img {
     display: inline-block;
 }
+
 .feature h4 {
     font-size: .18rem;
     color: #333;
     line-height: .5rem;
 }
+
 .feature p {
     font-size: .16rem;
     text-align: left;
     color: #999;
 }
+
 .feature div {
     padding-right: 3%;
 }
+
 .feature .count {
     padding-right: 0;
     padding-left: 3%;
@@ -129,6 +221,7 @@ text-align: right;
     padding-bottom: 3%;
     border-left: 1px dashed #dedede;
 }
+
 .feature h5 {
     margin-top: .26rem;
     padding-left: .2rem;
@@ -137,27 +230,39 @@ text-align: right;
     background: url(images/people.png) no-repeat left center;
     color: #29b078;
 }
-.feature .count p{
+
+.feature .count p {
     font-size: .18rem;
 }
+
 @media screen and (max-width: 992px) {
-    .feature {margin-top: .6rem;}
-    .feature .count {border-left: none;}
+    .feature {
+        margin-top: .6rem;
+    }
+    .feature .count {
+        border-left: none;
+    }
 }
+
+
 /*learn*/
+
 .main h3 {
     font-size: .18rem;
-    text-align:center;
+    text-align: center;
     font-weight: 900;
     clear: both;
 }
+
 .learn {
     margin-right: -.3rem;
 }
+
 .learn h3 {
     margin-top: .9rem;
     margin-bottom: .3rem;
 }
+
 .learn h4 {
     float: left;
     width: .7rem;
@@ -172,206 +277,290 @@ text-align: right;
     background: #fff;
     color: #29b078;
 }
+
 .learn p {
     float: left;
-    width: calc(100% - 1.1rem);
-    padding-right: .3rem;
     display: inline-block;
     vertical-align: middle;
     position: absolute;
     top: 50%;
+    width: calc(100% - 1.1rem);
+    padding-right: .3rem;
     transform: translateY(-50%);
     color: #999;
 }
+
 .learn .row div {
-        height: .9rem;
+    height: .9rem;
     margin: .3rem 0;
     background: url(images/jt.png) no-repeat right center;
 }
+
 .learn div:nth-child(4n) {
-background: none;
-}
-@media screen and (max-width: 992px) {
-   .learn div:nth-child(4) {
-background: url(images/jt.png) no-repeat right center;;
-}
-.learn div:nth-child(8) {
     background: none;
 }
 
+@media screen and (max-width: 992px) {
+    .learn div:nth-child(4) {
+        background: url(images/jt.png) no-repeat right center;
+    }
+    .learn div:nth-child(8) {
+        background: none;
+    }
 }
+
+@media screen and (max-width: 768px) {
+    .learn .row div {
+        margin: 0;
+        background: none;
+    }
+}
+
+
 /*student*/
+
 .students {
-    margin:0 -.05rem;
+    margin: 0 -.05rem;
 }
+
 .students h3 {
     margin: .6rem;
 }
+
 .students .student {
-    text-align: center;
-    background: #fff;
-    padding:.2rem .3rem;
+    padding: .2rem .3rem;
     margin: 0 .05rem;
-        border-radius: 6px;
+    border-radius: 6px;
     box-shadow: 0 0 4px #eeeded;
     border: 1px solid #eeeded;
+    text-align: center;
+    background: #fff;
 }
+
 .students img {
     width: 1.08rem;
     height: 1.08rem;
     border-radius: 50%;
 }
+
 .student h4 {
-    color: #333;
+    margin: .36rem 0 .23rem 0;
     font-size: .18rem;
     font-weight: 500;
-    margin:.36rem 0 .23rem 0;
+    color: #333;
 }
+
 .student p {
-    font-size: .16rem;
-    color: #999;
     line-height: .26rem;
     text-align: left;
+    font-size: .16rem;
+    color: #999;
 }
+
+.students .student:hover {
+    box-shadow: 0 0 20px #eeeded;
+    border: 1px solid #fff;
+}
+
 @media screen and (max-width: 992px) {
-.students .student{margin-bottom: .4rem;}
+    .students .student {
+        margin-bottom: .4rem;
+    }
 }
+
+
 /*partner*/
-.col-lg-1-5, .col-md-1-5 {
+
+.col-lg-1-5,
+.col-md-1-5 {
+    position: relative;
     min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
 @media (min-width: 768px) {
-  .col-sm-1-5 {
-    width: 20%;
-    float: left;
-  }
+    .col-sm-1-5 {
+        width: 20%;
+        float: left;
+    }
 }
+
 @media (min-width: 992px) {
-  .col-md-1-5 {
-    width: 20%;
-    float: left;
-  }
+    .col-md-1-5 {
+        width: 20%;
+        float: left;
+    }
 }
 
 @media (min-width: 1200px) {
-  .col-lg-1-5 {
-    width:20%;
-    float: left;
-  }
+    .col-lg-1-5 {
+        width: 20%;
+        float: left;
+    }
 }
 
-.partner .row{
-margin-bottom: .9rem;
+.partner .row {
+    margin-bottom: .9rem;
 }
+
 .partner h3 {
-    margin:1.3rem 0 .6rem 0;
+    margin: 1.3rem 0 .6rem 0;
 }
+
 .partner .row div {
     padding-left: 0;
     padding-right: 0;
+    text-align: center;
 }
-.partner .row div img{
+
+.partner .row div img {
     box-shadow: 0 0 3px #e2e2e2;
-    width: 100%;
+    max-width: 100%;
 }
-.partner .row div:hover img{
+
+.partner .row div:hover img {
     box-shadow: 0 0 10px #e2e2e2;
-    position: absolute;
     z-index: 2;
-    width: 100%;
+    max-width: 100%;
 }
+
 @media screen and (max-width: 992px) {
-.partner h3{margin-top: .6rem;}
+    .partner h3 {
+        margin-top: .6rem;
+    }
 }
+
+@media screen and (max-width: 768px) {
+    .partner .col-xs-6 {
+        width: 50%;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .partner .col-xs-6 {
+        margin: 0;
+    }
+}
+
+
 /*links*/
+
 .links {
     background: #fff;
 }
+
 .links h3 {
-    font-size: .18rem;
-    text-align:center;
-    font-weight: 900;
     margin: .2rem 0;
+    font-size: .18rem;
+    text-align: center;
+    font-weight: 900;
 }
+
 .links ul {
     margin-left: -.24rem;
     margin-right: -.24rem;
     margin-bottom: .14rem;
 }
+
 .links ul li {
     display: inline-block;
     padding-left: .14rem;
-    background: url(images/disc.png) no-repeat left center;
     margin-right: .24rem;
     margin-left: .24rem;
-    line-height: .30rem;
     border-bottom: 1px solid transparent;
+    line-height: .30rem;
+    background: url(images/disc.png) no-repeat left center;
 }
+
 .links ul li a {
     color: #999;
 }
+
 .links ul li:hover {
-border-bottom: 1px solid #29b078;
+    border-bottom: 1px solid #29b078;
 }
+
+
 /*footer*/
+
 .footer {
     background: #29b078;
     color: #fff;
 }
+
 .footer .container {
-    margin:.2rem auto .1rem auto;
+    margin: .2rem auto .1rem auto;
 }
+
 .footer h3 {
-font-size: .16rem;
+    font-size: .16rem;
 }
+
 .footer ul li {
     display: inline-block;
 }
+
 .footer ul li a {
     color: #fff;
 }
+
 .about {
     margin-top: .6rem;
 }
+
 .about li {
-    border-left: 2px solid #fff;
-    line-height: .14rem;
     padding-left: .1rem;
     padding-right: .1rem;
+    border-left: 2px solid #fff;
+    line-height: .14rem;
 }
+
 .about li:first-child {
     border-left: none;
     padding-left: 0;
 }
+
 .websites li {
+    margin-top: .12rem;
     margin-right: .36rem;
     border-bottom: 1px solid transparent;
     line-height: .24rem;
-    margin-top: .12rem;
 }
-.websites li:hover{
+
+.websites li:hover {
     margin-right: .36rem;
     border-bottom: 1px solid #fff;
 }
+
 .wx {
     text-align: right;
 }
+
 .copyright {
-    background: #29b078;
-        text-align: center;
-    line-height: .3rem;
     border-top: 1px solid #32c086;
+    text-align: center;
+    line-height: .3rem;
+    background: #29b078;
     color: #fff;
 }
+
 .copyright a {
     color: #fff;
 }
 
 @media screen and (max-width: 992px) {
-.footer h3 {
-    font-size: .15rem;}
+    .footer h3 {
+        font-size: .15rem;
+    }
 }
 
+@media screen and (max-width: 768px) {
+    .about {
+        margin-top: .24rem;
+    }
+    .wx {
+        text-align: center;
+    }
+}
