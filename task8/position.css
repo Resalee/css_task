@@ -57,6 +57,7 @@
 .choice .position {
     position: relative;
     margin-top: .4rem;
+    border: 1px solid #eeeded;
     box-shadow: 0 0 3px #eeeded;
     border-radius: 3px;
     background: #fff;
