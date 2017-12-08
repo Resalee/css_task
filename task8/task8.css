@@ -262,10 +262,6 @@ footer {
     clear: both;
 }
 
-.learn {
-    margin-right: -.3rem;
-}
-
 .learn h3 {
     margin-top: .9rem;
     margin-bottom: .3rem;
@@ -328,9 +324,7 @@ footer {
 
 /*student*/
 
-.students {
-    margin: 0 -.05rem;
-}
+
 
 .students h3 {
     margin: .6rem;
@@ -347,10 +341,11 @@ footer {
 }
 
 .students .carousel-indicators .active {
-    width: 13px;
-    height: 13px;
-    margin: 2px;
+    width: 15px;
+    height: 15px;
+    margin: 1px;
     background-color: #29b078;
+    box-shadow: 0 0 3px #29b078;
 }
 
 .students .carousel-indicators li {
@@ -483,7 +478,6 @@ footer {
 }
 
 
-
 /*links*/
 
 .links {
@@ -498,16 +492,15 @@ footer {
 }
 
 .links ul {
-    margin-left: -.24rem;
-    margin-right: -.24rem;
+    margin-left: -15px;
+    margin-right: -15px;
     margin-bottom: .14rem;
 }
 
 .links ul li {
     display: inline-block;
     padding-left: .14rem;
-    margin-right: .24rem;
-    margin-left: .24rem;
+    margin-right: .4rem;
     border-bottom: 1px solid transparent;
     line-height: .30rem;
     background: url(images/disc.png) no-repeat left center;
