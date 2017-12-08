@@ -32,7 +32,10 @@ footer {
     right: 0;
 }
 
+
 /*header*/
+
+
 /*welcome*/
 
 .welcome {
@@ -60,6 +63,7 @@ footer {
     }
 }
 
+
 /*logo*/
 
 .header {
@@ -68,11 +72,12 @@ footer {
     background: #29b078;
 }
 
+
 /*nav*/
 
 .navbar-default {
     background-color: #29b078;
-    border:none;
+    border: none;
     padding-left: 15px;
 }
 
@@ -102,7 +107,9 @@ footer {
         height: auto;
         line-height: .6rem;
     }
-    .navbar-default {padding-left: 0;}
+    .navbar-default {
+        padding-left: 0;
+    }
     .navbar-collapse {
         border-top: none;
     }
@@ -150,6 +157,7 @@ footer {
 }
 
 
+
 /**/
 
 .breadcrumb {
@@ -177,11 +185,13 @@ footer {
 }
 
 
+
 /*main*/
 
 .main {
     background: #fafafa;
 }
+
 
 
 /*feature*/
@@ -240,6 +250,7 @@ footer {
         border-left: none;
     }
 }
+
 
 
 /*learn*/
@@ -314,6 +325,7 @@ footer {
 }
 
 
+
 /*student*/
 
 .students {
@@ -323,6 +335,34 @@ footer {
 .students h3 {
     margin: .6rem;
 }
+
+.students .carousel-indicators {
+    bottom: -3px;
+}
+
+@media screen and (min-width: 993px) {
+    .students .carousel-indicators {
+        bottom: -.5rem;
+    }
+}
+
+.students .carousel-indicators .active {
+    width: 13px;
+    height: 13px;
+    margin: 2px;
+    background-color: #29b078;
+}
+
+.students .carousel-indicators li {
+    width: 13px;
+    height: 13px;
+    margin: 2px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 3px #CCC;
+}
+
 
 .students .student {
     padding: .2rem .3rem;
@@ -334,7 +374,7 @@ footer {
     background: #fff;
 }
 
-.students img {
+.student img {
     width: 1.08rem;
     height: 1.08rem;
     border-radius: 50%;
@@ -364,6 +404,7 @@ footer {
         margin-bottom: .4rem;
     }
 }
+
 
 
 /*partner*/
@@ -442,6 +483,7 @@ footer {
 }
 
 
+
 /*links*/
 
 .links {
@@ -478,6 +520,7 @@ footer {
 .links ul li:hover {
     border-bottom: 1px solid #29b078;
 }
+
 
 
 /*footer*/
