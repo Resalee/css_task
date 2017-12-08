@@ -358,7 +358,6 @@ footer {
     box-shadow: 0 0 3px #CCC;
 }
 
-
 .students .student {
     padding: .2rem .3rem;
     margin: 0 .05rem;
@@ -500,7 +499,8 @@ footer {
 .links ul li {
     display: inline-block;
     padding-left: .14rem;
-    margin-right: .4rem;
+    margin-left: .15rem;
+    margin-right: .15rem;
     border-bottom: 1px solid transparent;
     line-height: .30rem;
     background: url(images/disc.png) no-repeat left center;
