@@ -1,0 +1,135 @@
+@charset "utf-8";
+//basic
+$color: #5fc0cd;
+$bgcolor: #eff0f4;
+$fontcolor: #fff;
+$gray: #e1e5e7;
+$darken: #45b6c5;
+$fs18: .18rem;
+$fs16: .16rem;
+
+@mixin input($value: $gray) {
+  input::-webkit-input-placeholder { /* WebKit browsers */
+color: $value;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: $value;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+color: $value;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+color: $value;
+}
+}
+@mixin effectcolor($value:$color) {
+  &:hover, &:visited, &:focus, &:active {
+    color: $value;
+  }
+}
+/*commom*/
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+html {
+  font-size: 625%; //1rem=100px
+}
+body {
+  height: 100%;
+  background: $bgcolor;
+  color: $fontcolor;
+  font-family: 'Microsoft Yahei';
+}
+header,
+main {
+  position: absolute;
+}
+img {
+  max-width: 100%;
+}
+a, a:focus, a:hover, a:active, a:visited {
+  text-decoration: none;
+}
+a:hover {
+  font-weight: 700;
+}
+/*header*/
+header {
+  height: .44rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: $color;
+  line-height: .44rem;
+  h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: $fs18;
+  font-weight: 400;
+  color: $fontcolor;
+  }
+  a{
+    position: absolute;
+    font-size: $fs16;
+    color: $fontcolor;
+  }
+  .close {
+    left: .2rem;
+  }
+  .register {
+    right: .2rem;
+  }
+}
+/*main*/
+main {
+  top: .44rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  @include input;
+}
+
+
+main input {
+  display: block;
+  width: 100%;
+  height: .5rem;
+  margin-top: .08rem;
+  padding-left: .76rem;
+  font-size: $fs16;
+  &:focus {
+    outline: none;
+  }
+}
+.phonenumber {
+  background: $fontcolor url(../images/phonenumber.jpg) no-repeat left center;
+  background-size: contain;
+}
+.password {
+  background: $fontcolor url(../images/password.jpg) no-repeat left center;
+  background-size: contain;
+}
+.submit {
+  margin-top: .35rem;
+  padding-left: 0;
+  font-size: $fs18;
+  text-align: center;
+  color: $fontcolor;
+  background: $color;
+  cursor: pointer;
+  &:hover {
+    background: $darken;
+  }
+}
+.forgetpassword a{
+  display: block;
+  text-align: right;
+  font-size: $fs16;
+  line-height: .36rem;
+  color: $color;
+  @include effectcolor;
+}
+
