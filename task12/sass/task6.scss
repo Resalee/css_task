@@ -1,0 +1,364 @@
+@charset "UTF-8";
+//reset
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+em,
+img,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+footer,
+header,
+nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+
+/* HTML5 display-role reset for older browsers */
+
+footer,
+header,
+main,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+    text-decoration: none;
+}
+
+//variable
+$color: #5fc0cd;
+$darken: #55a8b3;
+$white: #fff;
+$gray: #999;
+$black: #333;
+$red: #e63b0e;
+$border: 1px solid #e1e5e7;
+
+//mixins
+@mixin image {
+    background: url(../images/img.png) no-repeat;
+    background-size: .23rem 2.6rem;
+}
+
+@mixin line {
+    background-position: 0 -2.22rem;
+}
+
+@mixin info {
+    background-position: right -1.94rem;
+}
+
+@mixin position {
+    background-position: 0 -1.43rem;
+}
+
+@mixin date {
+    background-position: 0 -1.66rem;
+}
+
+@mixin on {
+    width: .2rem;
+    height: .21rem;
+    background-position: 0 -.71rem;
+}
+
+@mixin city {
+    width: .21rem;
+    height: .22rem;
+    background-position: 0 0;
+}
+
+@mixin mine {
+    width: .21rem;
+    background-position: 0 -1.04rem;
+}
+
+@mixin home {
+    width: .23rem;
+    background-position: 0 -.35rem;
+}
+
+//commom
+html,
+body {
+    height: 100%;
+    font-family: 'Microsoft Yahei', 'STHeiti', 'Hiragino Sans GB', 'WenQuanYi Zen Hei', sans-serif;
+    font-size: 625%;
+    color: $black;
+    background: $white;
+}
+
+header,
+nav,
+main,
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: .14rem;
+}
+
+
+header .city,
+nav .list,
+main .col-xs-12 span,
+footer .btn a,
+main .col-xs-12 .price {
+    @include image;
+}
+
+
+nav,
+.row {
+    border-bottom: $border;
+}
+
+.col-xs-12 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-xs-12 p {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.btn-group {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0 .1rem;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    font-size: .17rem;
+    line-height: .34rem;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background: $darken;
+    color: $white;
+}
+
+.btn-success {
+    background: $white;
+    color: $color;
+}
+
+
+
+/*header*/
+
+header {
+    top: 0;
+    height: .44rem;
+    background: $color;
+    .btn-group {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .btn-success {
+        margin-left: -.08rem;
+    }
+    .city {
+        position: absolute;
+        top: 50%;
+        right: .15rem;
+        transform: translateY(-50%);
+        @include city;
+    }
+}
+
+
+
+/*nav*/
+
+nav {
+    top: .44rem;
+    height: .4rem;
+    background: #white;
+    .list {
+        position: relative;
+        width: 33.33333%;
+        float: left;
+        @include line;
+    }
+    .list:first-child {
+        background: none;
+    }
+    .list h3 {
+        position: absolute;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        line-height: .4rem;
+        color: $gray;
+    }
+    .list h3:after {
+        position: absolute;
+        content: '';
+        top: .18rem;
+        right: .1rem;
+        border-top: 4px solid $gray;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+    }
+    select {
+        opacity: 0;
+        width: 100%;
+        min-width: 1rem;
+        height: .4rem;
+        color: $gray;
+    }
+}
+
+
+/*main*/
+
+main {
+    top: .84rem;
+    bottom: .5rem;
+    overflow: auto;
+    line-height: .17rem;
+    .col-xs-12 span {
+        display: block;
+        clear: both;
+        margin: .1rem 0;
+        padding-left: .2rem;
+        font-size: .13rem;
+        color: $gray;
+        @include position;
+    }
+    .col-xs-12 span:first-child {
+        @include date;
+    }
+
+    .col-xs-12 .date {
+        float: left;
+        overflow: hidden;
+        width: 65%;
+        padding-left: .2rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: $black;
+    }
+    .col-xs-12 .price {
+        float: right;
+        overflow: hidden;
+        width: 35%;
+        padding-right: .2rem;
+        text-align: right;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        @include info;
+    }
+    .col-xs-12 .price a {
+        font-size: .15rem;
+        color: $red;
+    }
+}
+
+
+
+/*footer*/
+
+footer {
+    bottom: 0;
+    height: .5rem;
+    border-top: 1px solid #e2eaec;
+    background: #f8fafb;
+    .btn {
+        position: absolute;
+        top: 50%;
+        padding: 0 .135rem;
+        background: none;
+        a {
+            display: block;
+            width: .23rem;
+            padding-top: .27rem;
+            font-size: .1rem;
+            line-height: 1.42857143;
+            color: $color;
+        }
+    }
+    .home {
+        left: .6rem;
+        transform: translateY(-50%);
+        a {
+            @include home;
+        }
+    }
+    .on {
+        left: 50%;
+        width: .47rem;
+        height: .47rem;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: $color;
+        a {
+            padding-top: 0;
+            @include on;
+        }
+    }
+    .mine {
+        right: .6rem;
+        transform: translateY(-50%);
+        a {
+            @include mine;
+        }
+    }
+}

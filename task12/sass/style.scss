@@ -1,0 +1,222 @@
+@charset "UTF-8";
+//basic
+$color: #5fc0cd;
+$bgcolor: #fff;
+$fontcolor: #333;
+$gray: #999;
+$stress: #e26163;
+$bordercolor: #e1e5e7;
+@mixin room {
+  padding:.17rem .15rem;
+  border-bottom: 1px solid $bordercolor;
+}
+@mixin space {
+  padding-left: .15rem;
+  padding-right: .14rem;
+  margin-right: .14rem;
+  border-right: 1px solid $bordercolor;
+}
+/*commom*/
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+html,
+body {
+  height: 100%;
+  font-size: 625%; //1rem=100px
+  color: #333;
+  font-family: "Microsoft Yahei", "STHeiti", "Hiragino Sans GB", "WenQuanYi Zen Hei", sans-serif;
+  background: #fff;
+}
+img {
+  max-width: 100%;
+}
+a, a:hover, a:focus, a:active, a:focus {
+  text-decoration: none;
+}
+h1, h2 {
+  font-size: .18rem;
+}
+h3 {
+  font-size: .16rem;
+}
+header,
+main,
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: .14rem;
+}
+@font-face {
+  font-family: 'iconfont';  // project id 457105
+  src: url('https://at.alicdn.com/t/font_457105_iiblt5v9q0p8ehfr.eot');
+  src: url('https://at.alicdn.com/t/font_457105_iiblt5v9q0p8ehfr.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_457105_iiblt5v9q0p8ehfr.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_457105_iiblt5v9q0p8ehfr.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_457105_iiblt5v9q0p8ehfr.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*header*/
+header {
+  top: 0;
+  height: .44rem;
+  line-height: .44rem;
+  background: $color;
+  h1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-weight: 400;
+    color: $bgcolor;
+  }
+  .goback {
+    position: absolute;
+    left: .18rem;
+    font-size: .16rem;
+    font-weight: 700;
+    color: $bgcolor;
+  }
+}
+/*main*/
+main {
+  min-width: 320px;
+  top: .44rem;
+  bottom: .8rem;
+  overflow: auto;
+  background: $bgcolor;
+  .user {
+    height: 1.65rem;
+    position: relative;
+    background: url(../images/bg.jpg) no-repeat center;
+    background-size: cover;
+    dd {
+      position: absolute;
+      left: .18rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: .85rem;
+      height: .85rem;
+      img{
+        max-width: 100%;
+      }
+    }
+    dt {
+      position: absolute;
+      left: 1.2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      h2 {
+        color: $bgcolor;
+        font-weight: 400;
+        line-height: .2rem;
+        padding-bottom: .1rem;
+      }
+      p {
+        font-size: .12rem;
+        color: $bgcolor;
+      }
+      .iconfont {
+        padding-right: .05rem;
+        font-size: .14rem;
+        color: $color;
+      }
+    }
+  }
+  .info {
+    font-size: .16rem;
+    line-height: .16rem;
+    color: $fontcolor;
+  }
+  .skill {
+    @include room;
+  }
+  .skill h3 {
+    padding-left: .15rem;
+    border-left: 2px solid $color;
+  }
+  .feature {
+    @include room;
+    margin-left: .15rem;
+  }
+  .feature .iconfont {
+    color: $stress;
+    padding-right: .05rem;
+  }
+  .feature span {
+    display: inline-block;
+  }
+  .feature span:first-child {
+    @include space;
+    padding-left: 0;
+  }
+  .info dl {
+    position: relative;
+    @extend .feature;
+    clear: both;
+  }
+  .info dt {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .info dt{
+    @include space;
+    color: $gray;
+  }
+  .info dd {
+    display: inline-block;
+    margin-left: .92rem;
+  }
+  .info em {
+    font-style: normal;
+    font-weight: 700;
+    color: $stress;
+  }
+  .info .introduction {
+    font-size: .14rem;
+    line-height: .2rem;
+  }
+}
+/*footer*/
+footer {
+  bottom: 0;
+  height: .44rem;
+  padding: .2rem;
+  background: $bgcolor;
+  button {
+    float: left;
+    box-sizing: border-box;
+    width: calc((100% - .1rem)/2);
+    height: .44rem;
+    font-size: .17rem;
+    line-height: .44rem;
+    text-align: center;
+    background: $bgcolor;
+    a{
+      display: block;
+      border-radius: 6px;
+    }
+  }
+  .message a{
+    margin-right: .1rem;
+    border: 2px solid $color;
+    line-height: .4rem;
+    background: $bgcolor;
+    color: $color;
+  }
+  .tel a{
+    background: $color;
+    color: $bgcolor;
+  }
+}

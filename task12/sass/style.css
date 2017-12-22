@@ -1,0 +1,182 @@
+/*commom*/
+* {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+html,
+body {
+  height: 100%;
+  font-size: 625%;
+  color: #333;
+  font-family: "Microsoft Yahei", "STHeiti", "Hiragino Sans GB", "WenQuanYi Zen Hei", sans-serif;
+  background: #fff; }
+
+img {
+  max-width: 100%; }
+
+a, a:hover, a:focus, a:active, a:focus {
+  text-decoration: none; }
+
+h1, h2 {
+  font-size: .18rem; }
+
+h3 {
+  font-size: .16rem; }
+
+header,
+main,
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: .14rem; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("https://at.alicdn.com/t/font_457105_iiblt5v9q0p8ehfr.eot");
+  src: url("https://at.alicdn.com/t/font_457105_iiblt5v9q0p8ehfr.eot?#iefix") format("embedded-opentype"), url("https://at.alicdn.com/t/font_457105_iiblt5v9q0p8ehfr.woff") format("woff"), url("https://at.alicdn.com/t/font_457105_iiblt5v9q0p8ehfr.ttf") format("truetype"), url("https://at.alicdn.com/t/font_457105_iiblt5v9q0p8ehfr.svg#iconfont") format("svg"); }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+/*header*/
+header {
+  top: 0;
+  height: .44rem;
+  line-height: .44rem;
+  background: #5fc0cd; }
+  header h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-weight: 400;
+    color: #fff; }
+  header .goback {
+    position: absolute;
+    left: .18rem;
+    font-size: .16rem;
+    font-weight: 700;
+    color: #fff; }
+
+/*main*/
+main {
+  min-width: 320px;
+  top: .44rem;
+  bottom: .8rem;
+  overflow: auto;
+  background: #fff; }
+  main .user {
+    height: 1.65rem;
+    position: relative;
+    background: url(../images/bg.jpg) no-repeat center;
+    background-size: cover; }
+    main .user dd {
+      position: absolute;
+      left: .18rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: .85rem;
+      height: .85rem; }
+      main .user dd img {
+        max-width: 100%; }
+    main .user dt {
+      position: absolute;
+      left: 1.2rem;
+      top: 50%;
+      transform: translateY(-50%); }
+      main .user dt h2 {
+        color: #fff;
+        font-weight: 400;
+        line-height: .2rem;
+        padding-bottom: .1rem; }
+      main .user dt p {
+        font-size: .12rem;
+        color: #fff; }
+      main .user dt .iconfont {
+        padding-right: .05rem;
+        font-size: .14rem;
+        color: #5fc0cd; }
+  main .info {
+    font-size: .16rem;
+    line-height: .16rem;
+    color: #333; }
+  main .skill {
+    padding: .17rem .15rem;
+    border-bottom: 1px solid #e1e5e7; }
+  main .skill h3 {
+    padding-left: .15rem;
+    border-left: 2px solid #5fc0cd; }
+  main .feature, main .info dl {
+    padding: .17rem .15rem;
+    border-bottom: 1px solid #e1e5e7;
+    margin-left: .15rem; }
+  main .feature .iconfont, main .info dl .iconfont {
+    color: #e26163;
+    padding-right: .05rem; }
+  main .feature span, main .info dl span {
+    display: inline-block; }
+  main .feature span:first-child, main .info dl span:first-child {
+    padding-left: .15rem;
+    padding-right: .14rem;
+    margin-right: .14rem;
+    border-right: 1px solid #e1e5e7;
+    padding-left: 0; }
+  main .info dl {
+    position: relative;
+    clear: both; }
+  main .info dt {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%); }
+  main .info dt {
+    padding-left: .15rem;
+    padding-right: .14rem;
+    margin-right: .14rem;
+    border-right: 1px solid #e1e5e7;
+    color: #999; }
+  main .info dd {
+    display: inline-block;
+    margin-left: .92rem; }
+  main .info em {
+    font-style: normal;
+    font-weight: 700;
+    color: #e26163; }
+  main .info .introduction {
+    font-size: .14rem;
+    line-height: .2rem; }
+
+/*footer*/
+footer {
+  bottom: 0;
+  height: .44rem;
+  padding: .2rem;
+  background: #fff; }
+  footer button {
+    float: left;
+    box-sizing: border-box;
+    width: calc((100% - .1rem)/2);
+    height: .44rem;
+    font-size: .17rem;
+    line-height: .44rem;
+    text-align: center;
+    background: #fff; }
+    footer button a {
+      display: block;
+      border-radius: 6px; }
+  footer .message a {
+    margin-right: .1rem;
+    border: 2px solid #5fc0cd;
+    line-height: .4rem;
+    background: #fff;
+    color: #5fc0cd; }
+  footer .tel a {
+    background: #5fc0cd;
+    color: #fff; }
+
+/*# sourceMappingURL=style.css.map */
