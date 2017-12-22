@@ -52,6 +52,9 @@ a:active,
 a:visited {
   text-decoration: none; }
 
+button:focus {
+  outline: none; }
+
 html,
 body {
   height: 100%;
