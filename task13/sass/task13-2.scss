@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+@import "variable";
+@import "mixins/img";
+@import "reset";
+@import "utilities/commom";
+@import "button";
+//
+
+/*header*/
+
+.header-menu {
+    @include menu1;
+}
+
+.header-close {
+    right: .11rem;
+    @include close;
+}
+
+
+/*main*/
+
+main {
+    bottom: .95rem;
+    padding: 0;
+    background-color: $blue;
+}
+
+.prompt-play {
+    height: .41rem;
+    background: $blue100;
+    &-info {
+        padding-left: .24rem;
+        line-height: .41rem;
+        font-size: .13rem;
+        color: $gray600;
+    }
+    &-click {
+        padding-left: .35rem;
+        margin-bottom: 0;
+        line-height: .4rem;
+        font-size: .12rem;
+        color: $white;
+    }
+    &-click:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        border-width: .07rem .035rem 0 .035rem;
+        border-color: $blue100 transparent;
+        border-style: solid;
+    }
+}
+
+.btn-audio {
+    float: right;
+    margin: .075rem .085rem;
+    width: .26rem;
+    height: .26rem;
+    background: url(../images/voice_stop.png) no-repeat center bottom;
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+/**/
+
+.player {
+    width: 100%;
+    padding: 0 .02rem;
+    text-align: center;
+    &-card {
+        display: inline-block;
+        width: 23.2%;
+        margin-left: 4.3%;
+        margin-right: 4.3%;
+        text-align: center;
+    }
+    &-info {
+        margin: 0;
+        border: .03rem solid $white;
+        cursor: pointer;
+    }
+
+    &-role {
+        margin: 0;
+        padding: 30% 0;
+        font-size: .15rem;
+        line-height: 100%;
+        color: $gray500;
+        background: $orange100;
+    }
+
+    &-number {
+        font-size: .12rem;
+        line-height: .14rem;
+        background: $green;
+    }
+
+    &-action {
+        display: block;
+        margin: .1rem auto;
+        padding-bottom: 25%;
+    }
+    &-actions {
+        display: none;
+        float: left;
+        margin: 1%;
+        padding-top: 23%;
+        width: 23%;
+        background-size: 100%;
+    }
+
+    &-action1 {
+        background-image: url(../images/icon1.png);
+    }
+    &-action2 {
+        background-image: url(../images/icon2.png);
+    }
+    &-action3 {
+        background-image: url(../images/icon3.png);
+    }
+    &-action4 {
+        background-image: url(../images/icon4.png);
+    }
+
+
+    &-card:hover .player-actions {
+        display: block;
+    }
+}
+
+
+/*footer*/
+
+footer {
+    bottom: 0;
+    height: .95rem;
+    background: $blue;
+}
+
+.vote {
+    margin: 0 .2rem;
+    border-top: 1px solid $white;
+    text-align: center;
+}

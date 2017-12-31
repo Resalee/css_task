@@ -1,0 +1,46 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Microsoft Yahei', 'STHeiti', 'Hiragino Sans GB', 'WenQuanYi Zen Hei', sans-serif;
+    font-size: 625%;
+}
+
+header,
+nav,
+main,
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: .14rem;
+}
+header {
+    top: 0;
+    height: .4rem;
+    padding: 0 .11rem;
+    background: $blue;
+}
+.header-title {
+  margin: 0;
+  text-align: center;
+  line-height: .4rem;
+  font-size: .17rem;
+  color: $white;
+}
+.bg, .bg-link {
+    display: block;
+    background-image: url(../images/img.png);
+    background-repeat: no-repeat;
+    background-size: 1.79rem 1.5rem;
+}
+.bg-link {
+    position: absolute;
+    bottom: .11rem;
+}
+main {
+    top: .4rem;
+    bottom: 0;
+    overflow: auto;
+    padding-left: .18rem;
+    padding-right: .18rem;
+}

@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import "variable";
+@import "mixins/img";
+@import "reset";
+@import "utilities/commom";
+@import "button";
+//
+
+/*header*/
+
+.header-home {
+    @include home;
+}
+
+.header-info {
+    right: .11rem;
+    @include info;
+}
+
+
+/*main*/
+
+main {
+    padding: 0;
+    background: $white;
+}
+
+.result {
+    padding: .12rem .38rem;
+    margin-bottom: 0;
+    background: $blue;
+    &-img {
+        display: block;
+        width: 1.75rem;
+        margin: 0 auto;
+    }
+    &-title {
+        margin-bottom: .2rem;
+        margin-top: .1rem;
+        font-size: .17rem;
+        line-height: .24rem;
+        font-weight: 700;
+        color: $orange200;
+    }
+
+    &-info {
+        margin-bottom: .1rem;
+        font-size: .13rem;
+        line-height: .14rem;
+        color: #fff;
+    }
+
+    &-info-role {
+        display: inline-block;
+        width: .4rem;
+        height: .24rem;
+        padding-right: .05rem;
+        vertical-align: top;
+        text-align: justify;
+        text-align-last: justify;
+    }
+
+    &-info-role:after {
+        display: inline-block;
+        content: '';
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+    }
+}
+
+
+/**/
+
+.days-item {
+    padding-left: .38rem;
+    padding-right: .38rem;
+    padding-bottom: .1rem;
+    border-bottom: 1px solid $gray100;
+    background: $white;
+}
+
+.days-date {
+    margin: .1rem 0;
+    font-size: .15rem;
+    line-height: .16rem;
+    color: $gray500;
+}
+
+.days-time {
+    float: right;
+    padding-right: .2rem;
+    font-size: .1rem;
+    color: $gray200;
+}
+
+.days-info {
+    margin-bottom: .1rem;
+    font-size: .13rem;
+    line-height: .13rem;
+    color: $gray700;
+}
+
+
+
+/*footer*/
+
+footer {
+    bottom: 0;
+    height: .65rem;
+    background: rgba(41, 189, 224, .48);
+}

@@ -1,0 +1,39 @@
+@mixin menu {
+    width: .17rem;
+    height: .135rem;
+    background-position: 0 0;
+}
+
+@mixin more {
+    background-position: calc(100% - .07rem) -.62rem;
+}
+
+@mixin more1 {
+    height: .28rem;
+    width: .14rem;
+    background-position: -1.64rem -.28rem;
+}
+
+@mixin close {
+    height: .18rem;
+    width: .18rem;
+    background-position: -1.61rem 0;
+}
+
+@mixin menu1 {
+    height: .2rem;
+    width: .2rem;
+    background-position: -1.23rem 0;
+}
+
+@mixin info {
+    width: .2rem;
+    height: .2rem;
+    background-position: -.84rem 0;
+}
+
+@mixin home {
+    width: .25rem;
+    height: .25rem;
+    background-position: -.4rem .04rem;
+}

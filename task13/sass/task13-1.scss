@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@import "variable";
+@import "mixins/img";
+@import "reset";
+@import "utilities/commom";
+@import "button";
+//
+
+/*header*/
+
+header .bg-link {
+    @include menu;
+}
+
+
+/*main*/
+
+main {
+    background-color: $gray;
+}
+
+.lastgame {
+    margin: .13rem 0;
+    padding: 0 .07rem;
+    @include more;
+}
+
+.games {
+    position: relative;
+}
+
+.games-tab {
+    padding-bottom: .23rem;
+    border: 1px solid $gray200;
+    background: $white;
+    &-title {
+        margin: 0 0 .15rem 0;
+        border-bottom: 1px solid $orange100;
+        text-align: center;
+        font-size: .19rem;
+        line-height: .45rem;
+        color: $orange;
+    }
+    &-link {
+        margin: .1rem .27rem;
+    }
+    &-info {
+        text-align: center;
+        font-size: .12rem;
+        color: $gray400;
+    }
+}
+
+
+.games-slide {
+    list-style: none;
+    margin-top: -.25rem;
+    padding: .05rem .27rem;
+    text-align: center;
+    &-item {
+        display: inline-block;
+        width: .09rem;
+        height: .09rem;
+        border-radius: 50%;
+        background: $gray;
+        cursor: pointer;
+    }
+    &-on {
+        background: $blue;
+    }
+}
+
+.games-next {
+    position: absolute;
+    right: .05rem;
+    top: 48%;
+    width: 0;
+    height: 0;
+    border-width: .14rem 0 .14rem .14rem;
+    border-color: transparent $orange;
+    border-style: solid;
+    cursor: pointer;
+}
