@@ -1,0 +1,24 @@
+.welcome {
+    line-height: 4rem;
+    background: $white;
+    color: $green;
+    &-social {
+        display: inline-block;
+        text-align: right;
+        &-link {
+            margin-left: 1.4rem;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .welcome .row {
+        flex-flows: row nowrap;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .welcome-social {
+        display: none;
+    }
+}

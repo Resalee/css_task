@@ -1,0 +1,119 @@
+.banner img {
+    width: 100%;
+    text-align: center;
+}
+
+//company
+
+#companies {
+    padding-bottom: 4rem;
+}
+
+//company list
+
+.company,
+.tab-content {
+    @extend %shadow;
+    border-radius: 3px;
+}
+
+.company {
+    width:25%;
+    align-self:flex-start;
+    h3 {
+        margin-top: 0;
+        border-bottom: 1px solid $gray;
+        line-height: 6rem;
+        margin-bottom: 0;
+    }
+    ul {
+        width: 9rem;
+        margin: 0 auto;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+        list-style: none;
+    }
+    li a {
+        padding-left: 1.6rem;
+        line-height: 5rem;
+        background: url(../images/gs.png) no-repeat left center;
+        color: $green;
+        &:hover,
+        &:focus {
+            background: url(../images/gs_hover.png) no-repeat left center;
+            color: $orange;
+        }
+    }
+}
+
+//company content
+
+.tab-content {
+    width:75%;
+    .active{
+        display:block;
+    }
+}
+
+.tab-pane {
+    display:none;
+    p {
+        font-weight: 400;
+        line-height: 2.6rem;
+        text-align: justify;
+        color: $gray-900;
+    }
+    dl {
+        padding: 2.5rem 6% 1.6rem 6%;
+        border-bottom: 1px solid $gray;
+        overflow: hidden;
+    }
+    dd {
+        float: left;
+        width: 20%;
+    }
+    dt {
+        float: right;
+        width: 76%;
+    }
+    .moreinfo {
+        padding: 2rem 6% 1rem;
+    }
+    .moreinfo p {
+        margin-bottom: 2rem;
+        text-indent: 2em;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .tab-pane {
+        dd {
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+        dt {
+            float: none;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .company {
+        margin-bottom: 3rem;
+        ul {
+            width: auto;
+        }
+        li {
+            display: inline-block;
+            padding: 0 1rem;
+            a {
+                line-height: 3.6rem;
+            }
+        }
+    }
+    .company, .tab-content {
+        width: calc(100% - 30px);
+    }
+}

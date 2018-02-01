@@ -1,0 +1,37 @@
+@import "helpers/variables";
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Microsoft Yahei', 'STHeiti', 'Hiragino Sans GB', 'WenQuanYi Zen Hei', 'sans-serif';
+    font-size: 1.4rem;
+    background-color: $white;
+}
+
+
+p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: $gray-900;
+}
+
+h3,
+h4 {
+    font-size: 1.8rem;
+    color: $black;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+img {
+    vertical-align: middle;
+}
+.main {
+    background-color: $gray;
+}

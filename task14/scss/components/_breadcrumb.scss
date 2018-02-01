@@ -1,0 +1,21 @@
+.breadcrumb {
+    padding: 0;
+    margin-bottom: 0;
+    background: none;
+    li {
+        display: inline-block;
+        font-size: 1.6rem;
+        line-height: 8rem;
+        a {
+            color: $black;
+        }
+    }
+    .active {
+        color: $green;
+    }
+}
+
+.breadcrumb>li+li:before {
+    color: $black;
+    content: ">";
+}

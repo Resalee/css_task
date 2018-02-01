@@ -1,0 +1,22 @@
+.thumbnail {
+    @extend %shadow;
+}
+
+.thumbnail>img,
+.thumbnail a>img {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+    border-color: $white;
+    box-shadow: 0 0 4px $gray-100;
+}
+
+.thumbnail-title {
+    text-align: center;
+    line-height: 5rem;
+    @extend %omit;
+}

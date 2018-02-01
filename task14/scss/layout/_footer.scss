@@ -1,0 +1,80 @@
+.footer {
+    clear: both;
+    background: $green;
+    color: $white;
+    .row {
+       padding: 1rem 0 2rem 0;
+    }
+    h3{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 400;
+        color: $white;
+    }
+    ul li {
+        display: inline-block;
+    }
+    a {
+        color: $white;
+    }
+}
+
+.about {
+    margin-top: 6rem;
+    li {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-left: 2px solid $white;
+        line-height: 1.4rem;
+        &:first-child {
+            padding-left: 0;
+            border-left: none;
+        }
+    }
+}
+
+
+.websites li {
+    margin-top: 1.2rem;
+    margin-right: 3.6rem;
+    border-bottom: 1px solid transparent;
+    line-height: 2.4rem;
+    &:hover {
+        margin-right: 3.6rem;
+        border-bottom: 1px solid $white;
+    }
+}
+
+.wx {
+    text-align: right;
+}
+
+.copyright {
+    border-top: 1px solid $green-100;
+    text-align: center;
+    line-height: 3rem;
+    background: $green;
+}
+@media screen and (max-width: 992px) {
+    .footer h3 {
+        font-size: 1.5rem;
+    }
+    .footer .row-item {
+        width: 40%;
+    }
+    .footer .wx {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about {
+        margin-top: 2.4rem;
+    }
+    .wx {
+        text-align: center;
+    }
+    .footer .row-item{
+        width:100%;
+    }
+}

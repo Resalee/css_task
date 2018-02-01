@@ -1,0 +1,80 @@
+.header-nav {
+    height: 10rem;
+    line-height: 9.6rem;
+    background: $green;
+}
+
+.header-nav .row {
+    justify-content: space-between;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+.navbar-collapse li {
+    display: inline-block;
+    a {
+        display: block;
+        padding: 0 3.2rem;
+        font-size: 1.6rem;
+        line-height: 9.6rem;
+        color: $white;
+    }
+}
+
+.cur a,
+.navbar-collapse a:focus,
+.navbar-collapse a:hover {
+    border-bottom: 0.4rem solid $white;
+    color: $white;
+}
+
+@media screen and (max-width:767px) {
+
+    .header-nav {
+        height: auto;
+        line-height: 6rem;
+    }
+    .navbar-header {
+        position: relative;
+    }
+    .navbar-toggle {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        .icon-bar {
+            display: block;
+            width: 30px;
+            height: 3px;
+            margin-bottom: 6px;
+            background-color: $white;
+        }
+        &:focus {
+            outline: 0;
+        }
+    }
+    .navbar-collapse {
+        display: none;
+        li {
+            display: block;
+        }
+        a {
+            padding: 0;
+            font-size: 1.6rem;
+            text-align: center;
+            line-height: 5rem;
+        }
+    }
+    .cur a,
+    .navbar-collapse a:focus,
+    .navbar-collapse a:hover {
+        border-bottom: 1px solid $white;
+    }
+}

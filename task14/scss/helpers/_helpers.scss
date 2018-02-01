@@ -1,0 +1,11 @@
+%omit {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+%shadow {
+    border: 1px solid $gray-100;
+    box-shadow: 0 0 4px $gray-100;
+    background: $white;
+}

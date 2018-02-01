@@ -1,0 +1,179 @@
+//position
+#choices {
+    padding: 2rem 0;
+    border-top: 1px solid $gray-800;
+    border-bottom: 1px solid $gray-200;
+    span {
+        display: inline-block;
+        margin-right: 2.4rem;
+        color: $gray-900;
+    }
+    ul {
+        display: inline-block;
+    }
+    li {
+        display: inline-block;
+    }
+    a {
+        margin-right: 3.6rem;
+        padding: 1px 3px;
+        color: $black;
+    }
+}
+
+#choices .active a,
+#choices li:hover a,
+#choices li:focus a {
+    color: $white;
+    background: $green;
+}
+
+@media screen and (max-width: 768px) {
+    #choices li a {
+        margin-right: 2rem;
+        line-height: 2.8rem;
+    }
+}
+
+
+//position content
+
+.choice {
+    padding-bottom: 4rem;
+    overflow: hidden;
+    h3 {
+        flex: 1 1 100%;
+        margin: 0 15px;
+        border-bottom: 1px solid $gray-800;
+        line-height: 8rem;
+        text-align: left;
+    }
+    .row {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        overflow: hidden;
+    }
+    .row-item {
+        width: 30%;
+        float: left;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .choice .row-item {
+        width: calc(50% - 30px);
+    }
+}
+
+@media screen and (max-width:767px) {
+    .choice .row-item {
+        width: calc(100% - 30px);
+    }
+}
+
+//position card
+
+.position {
+    position: relative;
+    margin-top: 4rem;
+    border: 1px solid $gray;
+    box-shadow: 0 0 3px $gray;
+    border-radius: 3px;
+    background: $white;
+    dl {
+        overflow: hidden;
+        padding: 2rem 1rem;
+        margin-bottom: 0;
+    }
+    dd {
+        float: left;
+        width: 13.9rem;
+    }
+    img {
+        max-width: 100%;
+    }
+    dt {
+        float: right;
+        width: calc(100% - 13.9rem);
+        padding-left: 1rem;
+        font-weight: 400;
+    }
+    li {
+        width: 50%;
+        float: left;
+        padding-left: 1rem;
+        list-style: none;
+        border-top: 1px solid $gray-200;
+        line-height: 4rem;
+        &:nth-child(2n) {
+            border-left: 1px solid $gray-200;
+        }
+        span {
+            padding-right: 1.4rem;
+            font-size: 1.2rem;
+            color: $gray-900;
+        }
+        img {
+            display: inline-block;
+        }
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    td {
+        padding-right: 1rem;
+        border-top: 1px solid $gray-200;
+        border-bottom: 1px solid $gray-200;
+        font-size: 1.2rem;
+        line-height: 3.6rem;
+        text-align: right;
+    }
+    tr:first-child td {
+        width: 42%;
+        padding-right: 0;
+        border-right: 1px solid $gray-200;
+        text-align: center;
+        color: $gray-900;
+    }
+    h5 {
+        margin: 0;
+        padding-left: 1rem;
+        border-bottom: 1px solid $gray-200;
+        font-weight: 700;
+        line-height: 4rem;
+        span {
+            color: $red;
+        }
+    }
+    .hint {
+        padding-left: 1rem;
+        line-height: 4rem;
+        font-size: 1rem;
+        @extend %omit;
+    }
+    .more {
+        display: none;
+    }
+}
+
+.position:hover .more {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 4rem;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, .76);
+    h4 {
+        padding: 2rem;
+        text-align: center;
+        color: $white;
+    }
+    p {
+        color: $white;
+        font-size: 1.4rem;
+    }
+}

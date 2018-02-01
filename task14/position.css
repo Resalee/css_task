@@ -1,0 +1,180 @@
+/**/
+.choices {
+    padding: .2rem 0;
+    border-top: 1px solid #d0d6d9;
+    border-bottom: 1px solid #edf1f2;
+}
+
+.choices span {
+    display: inline-block;
+    margin-right: .24rem;
+    color: #999;
+}
+
+.choices ul {
+    display: inline-block;
+}
+
+.choices li {
+    display: inline-block;
+}
+
+.choices li a {
+    padding: 1px 3px;
+    margin-right: .36rem;
+    color: #333;
+}
+
+.choices .cur a,
+.choices li:hover a,
+.choices li:focus a {
+    color: #fff;
+    background: #29b078;
+}
+
+@media screen and (max-width: 768px) {
+    .choices li a {
+        margin-right: .2rem;
+        line-height: .28rem;
+    }
+}
+/**/
+
+.main {
+    padding-bottom: .4rem;
+}
+
+.main h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #d0d6d9;
+    font-size: .16rem;
+    text-align: left;
+    line-height: .8rem;
+}
+
+/**/
+
+.choice .position {
+    position: relative;
+    margin-top: .4rem;
+    border: 1px solid #eeeded;
+    box-shadow: 0 0 3px #eeeded;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.position dl {
+    overflow: hidden;
+    padding: .2rem .1rem;
+    margin-bottom: 0;
+}
+
+.position dl dd {
+    float: left;
+    width: 1.39rem;
+}
+
+.position dl dd img {
+    max-width: 100%;
+}
+
+.position dl dt {
+    float: right;
+    width: calc(100% - 1.39rem);
+    padding-left: .1rem;
+    font-weight: 400;
+}
+
+.position h4 {
+    font-size: .16rem;
+    font-weight: 700;
+}
+
+.position ul li {
+    width: 50%;
+    float: left;
+    padding-left: .1rem;
+    list-style: none;
+    border-top: 1px solid #edf1f2;
+    line-height: .4rem;
+}
+
+.position li:nth-child(2n) {
+    border-left: 1px solid #edf1f2;
+}
+
+.position li span {
+    padding-right: .14rem;
+    font-size: .12rem;
+    color: #999;
+}
+
+.position li img {
+    display: inline-block;
+}
+
+.position table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.position table td {
+    border-top: 1px solid #edf1f2;
+    border-bottom: 1px solid #edf1f2;
+    padding-right: .1rem;
+    font-size: .12rem;
+    line-height: .36rem;
+    text-align: right;
+}
+
+.position table tr:first-child td {
+    width: 42%;
+    padding-right: 0;
+    border-right: 1px solid #edf1f2;
+    text-align: center;
+    color: #999;
+}
+
+.position h5 {
+    margin: 0;
+    padding-left: .1rem;
+    border-bottom: 1px solid #edf1f2;
+    font-weight: 700;
+    line-height: .4rem;
+}
+
+.position h5 span {
+    color: #f01400;
+}
+
+.position .hint {
+    padding-left: .1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: .4rem;
+    color: #999;
+    font-size: .12rem;
+}
+
+.position .more {
+    display: none;
+}
+
+.position:hover .more {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: .4rem;
+    border-radius: 3px;
+    color: #fff;
+    background: rgba(0, 0, 0, .76);
+}
+
+.position:hover .more h4 {
+    padding: .2rem;
+    text-align: center;
+}
