@@ -16,7 +16,7 @@ window.onload = function() {
         var r = Math.floor(Math.random() * 256);
         var g = Math.floor(Math.random() * 256);
         var b = Math.floor(Math.random() * 256);
-        return `rgb(${r},${g},${b})`; //"rgb("+r+","+g+","+b+")"
+        return "rgb("+r+","+g+","+b+")"; //`rgb(${r},${g},${b})`
     }
     //赋予3个格子颜色
     function setColor() {
@@ -32,7 +32,6 @@ window.onload = function() {
             }
         }
     }
-
     //点击开始按钮，添加颜色
     aBtn[0].onclick = function() {
         clearInterval(timer);
