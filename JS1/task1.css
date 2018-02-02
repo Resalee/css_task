@@ -1,0 +1,33 @@
+html {
+  max-width: 640px;
+  margin: 0 auto;
+}
+#soduku {
+    overflow: auto;
+}
+
+#soduku div {
+    float: left;
+    width: 31.3%;
+    margin: 1%;
+    padding-top: 31.3%;
+    background: #fea500;
+    border-radius: 6%;
+}
+.btn {
+width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid #fea500;
+    border-radius: 6px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fea500;
+     background: #ffffff;
+    outline: 0;
+    cursor: pointer;
+}
+.btn:hover, .btn:focus{
+  background: #fea500;
+  color:#fff;
+}
