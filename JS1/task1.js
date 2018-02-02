@@ -22,20 +22,13 @@ window.onload = function() {
     function setColor() {
         clearColor();
         var aGrid = [];
-        var aGridNew = [];
-        //生成数组，包含数字0-8
-        for (var i = 0; i < 9; i++) {
-            aGrid[i] = i;
-        }
-        //循环取数，添加颜色
         for (var i = 0; i < 3; i++) {
-            var randomNum = Math.floor(Math.random() * 9);//随机生成0-8中的一个数字
-            if (aGrid[randomNum] != null) {//如果aGird[随机]不为空
-                aGridNew[i] = aGrid[randomNum]; //从数组aGrid中取数放入新数组aGridNew
-                aGrid[randomNum] = null;//将原数组中该数设为空
-                aDiv[aGridNew[i]].style.backgroundColor = randomColor(); //将颜色添加到格子上
+            var randomNum = Math.floor(Math.random() * 9); //随机生成0-8中的一个数字
+            if (aGrid.indexOf(randomNum) == -1) { //如果在数组中没有找到这个随机数
+                aGrid[i] = randomNum; //就将该随机数设为aGrid[i]的值
+                aDiv[aGrid[i]].style.backgroundColor = randomColor(); //将颜色添加到格子上
             } else {
-                i--; //如果取到了空值，就将i减1，重新循环
+                i--; //如果在数组中找到了该随机数，就将i减1，重新循环
             }
         }
     }
