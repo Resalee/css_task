@@ -20,7 +20,6 @@ window.onload = function() {
         for (var i = 0; i < 9; i++) {
             aGrid[i] = i;
         }
-        var aGridNew = [];
         aGrid.sort(function(a, b) {
             return Math.random() > .5 ? -1 : 1;
         });
