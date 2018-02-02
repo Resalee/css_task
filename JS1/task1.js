@@ -11,30 +11,32 @@ window.onload = function() {
             aDiv[i].style.backgroundColor = '#fea500';
         }
     }
-    //赋予颜色
+    //生成随机颜色
+    function randomColor() {
+        var r = Math.floor(Math.random() * 256);
+        var g = Math.floor(Math.random() * 256);
+        var b = Math.floor(Math.random() * 256);
+        return `rgb(${r},${g},${b})`; //"rgb("+r+","+g+","+b+")"
+    }
+    //赋予3个格子颜色
     function setColor() {
         clearColor();
         var aGrid = [];
-        var aColor = [];
-        //生成3个随机数字
+        var aGridNew = [];
+        //生成数组，包含数字0-8
         for (var i = 0; i < 9; i++) {
             aGrid[i] = i;
         }
-        aGrid.sort(function(a, b) {
-            return Math.random() > .5 ? -1 : 1;
-        });
-        aGrid.length = 3;
-        //生成随机颜色
-        function randomColor() {
-            var r = Math.floor(Math.random() * 256);
-            var g = Math.floor(Math.random() * 256);
-            var b = Math.floor(Math.random() * 256);
-            return `rgb(${r},${g},${b})`; //"rgb("+r+","+g+","+b+")"
-        }
-        //将颜色添加到格子上
+        //循环取数，添加颜色
         for (var i = 0; i < 3; i++) {
-            aColor[i] = randomColor();
-            aDiv[aGrid[i]].style.backgroundColor = aColor[i];
+            var randomNum = Math.floor(Math.random() * 9);//随机生成0-8中的一个数字
+            if (aGrid[randomNum] != null) {//如果aGird[随机]不为空
+                aGridNew[i] = aGrid[randomNum]; //从数组aGrid中取数放入新数组aGridNew
+                aGrid[randomNum] = null;//将原数组中该数设为空
+                aDiv[aGridNew[i]].style.backgroundColor = randomColor(); //将颜色添加到格子上
+            } else {
+                i--; //如果取到了空值，就将i减1，重新循环
+            }
         }
     }
 
