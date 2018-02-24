@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <title>Task7-桌游精灵</title>
+    <script src="../js/jquery.min.js"></script>
+    <style type="text/css">
+  body{
+    background:#2b2938;
+}
+.btn-audio{
+    margin: 90px auto;
+    width:52px;
+    height:52px;
+    background:url(images/voice_stop.png) no-repeat center bottom;
+    background-size:cover;
+}
+
+.btn-audio #mp3Btn {
+  width: 152px;
+  height: 52px;
+  opacity: 0;
+  padding-left: 10px;
+  margin-top:-10px;
+}
+
+</style>
+</head>
+<body>
+  <div class="btn-audio"><audio id="mp3Btn" controls="controls"><source src="财富自由.mp3" type="audio/mpeg" /></audio></div>
+</body>
+
+<!-- <script type="text/javascript">
+    $(function(){
+        //播放完毕
+        $('#mp3Btn').on('ended', function() {
+            console.log("音频已播放完成");
+            $('.btn-audio').css({'background':'url(images/voice_stop.png) no-repeat center bottom','background-size':'cover'});
+        })
+        //播放器控制
+        var audio = document.getElementById('mp3Btn');
+        audio.volume = .3;
+        $('.btn-audio').click(function() {
+            event.stopPropagation();//防止冒泡
+            if(audio.paused){ //如果当前是暂停状态
+                $('.btn-audio').css({'background':'url(images/voice_play.png) no-repeat center bottom','background-size':'cover'});
+                audio.play(); //播放
+                return;
+            }else{//当前是播放状态
+                $('.btn-audio').css({'background':'url(images/voice_stop.png) no-repeat center bottom','background-size':'cover'});
+                audio.pause(); //暂停
+            }
+        });
+    })
+</script>
+ -->

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task7-桌游精灵</title>
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="task7.css">
+    <link rel="stylesheet" type="text/css" href="results.css">
+</head>
+
+<body>
+    <header>
+        <h2>查看身份</h2>
+        <a class="menu" href="#"></a>
+        <a class="closeit" href="#"></a>
+    </header>
+    <main>
+        <div id="player"><span>1</span>
+            <div id="fanpai" style="display: block"></div>
+            <div id="killer" class="result"><img src="images/player.png">
+                <h3>角色：杀手</h3>
+                <p>每天夜里你可以杀死一个人。</p>
+            </div>
+            <div id="odinary" class="result"><img src="images/player.png">
+                <h3>角色：平民</h3>
+                <p>夜晚不能睁眼，通过白天的讨论和投票找出杀手。</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <button type="button" class="btn">查看<span>1</span>号身份</button>
+    </footer>
+    <script>
+    var oBtn = document.getElementsByClassName('btn')[0];
+    var fanpai = document.getElementById('fanpai');
+    var oPlayer = document.getElementById('player').getElementsByTagName('span')[0];
+    var oKiller = document.getElementById('killer');
+    var oOdinary = document.getElementById('odinary');
+
+    oBtn.onclick = function() {
+        var res = window.localStorage.getItem("result");
+        var arr = JSON.parse(res);
+        if (fanpai.style.display === 'block') {
+            fanpai.style.display = 'none';
+            if (arr[Number(oPlayer.innerHTML) - 1] === "杀手") {
+                oOdinary.style.display = 'none';
+                oKiller.style.display = 'block';
+            } else {
+                oKiller.style.display = 'none';
+                oOdinary.style.display = 'block';
+            }
+            if (oPlayer.innerHTML == arr.length) {
+                oBtn.innerHTML = "法官查看";
+            } else {
+                oBtn.innerHTML = "隐藏身份并传递给" + (Number(oPlayer.innerHTML) + 1) + "号";
+            }
+        } else {
+            if (oPlayer.innerHTML == arr.length) {
+                window.location.href = "faguan.html";
+            } else {
+                oOdinary.style.display = 'none';
+                oKiller.style.display = 'none';
+                fanpai.style.display = 'block';
+                oPlayer.innerHTML = Number(oPlayer.innerHTML) + 1;
+                oBtn.innerHTML = "查看" + oPlayer.innerHTML + "号身份";
+
+            }
+        }
+    }
+    </script>
+</body>
+
+</html>

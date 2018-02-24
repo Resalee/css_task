@@ -1,0 +1,76 @@
+/**/
+
+.player {
+    width: 100%;
+    padding: 0 .02rem;
+    text-align: center;
+}
+
+.player li {
+    display: inline-block;
+    width: 23.2%;
+    margin-left: 4.3%;
+    margin-right: 4.3%;
+    text-align: center;
+}
+
+.player p {
+    margin: 0;
+}
+
+.player .info {
+    border: .03rem solid #fff;
+    cursor: pointer;
+}
+
+.player .role {
+    padding: 30% 0;
+    font-size: .15rem;
+    line-height: 100%;
+    color: #565656;
+    background: #f5c97b;
+}
+
+.player .code {
+    font-size: .12rem;
+    line-height: .14rem;
+    background: #83b09a;
+}
+
+.player .action {
+    display: block;
+    width: .7rem;
+    height: .15rem;
+    margin-top: .12rem;
+    margin-bottom: .12rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.player .action a {
+    display: none;
+    float: left;
+    margin-left: .02rem;
+    width: .15rem;
+    height: .15rem;
+}
+
+.player .action1 {
+    background-position: 0 -.4rem;
+}
+
+.player .action2 {
+    background-position: -.32rem -.4rem;
+}
+
+.player .action3 {
+    background-position: -.63rem -.4rem;
+}
+
+.player .action4 {
+    background-position: -.96rem -.4rem;
+}
+
+.player li:hover .action a {
+    display: block;
+}

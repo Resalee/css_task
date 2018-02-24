@@ -220,11 +220,11 @@ img {
     display: none; }
     .navbar-collapse li {
       display: block; }
-      .navbar-collapse li a {
-        padding: 0;
-        font-size: 1.6rem;
-        text-align: center;
-        line-height: 5rem; }
+    .navbar-collapse a {
+      padding: 0;
+      font-size: 1.6rem;
+      text-align: center;
+      line-height: 5rem; }
 
   .cur a,
   .navbar-collapse a:focus,
@@ -311,7 +311,7 @@ a.thumbnail.active {
 
 @media screen and (max-width: 767px) {
   .welcome .row {
-    flex-flow: row nowrap; } }
+    flex-flows: row nowrap; } }
 @media screen and (max-width: 420px) {
   .welcome-social {
     display: none; } }

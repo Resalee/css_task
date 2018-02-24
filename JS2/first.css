@@ -1,0 +1,132 @@
+/*header*/
+
+header h2 {
+    margin: 0;
+    font-size: .17rem;
+    color: #fff;
+    text-align: center;
+    line-height: .4rem;
+}
+
+header a {
+    width: .2rem;
+    height: .2rem;
+}
+
+header .menu {
+
+    background: url(images/back.png) no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+header .closeit {
+    right: .11rem;
+    background: url(images/close.png) no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+/*main*/
+
+main {
+    bottom: .7rem;
+    padding: .1rem;
+    border-top: 1px solid #59cae4;
+    background: #f0f0f0;
+
+}
+.day {
+    display: block;
+    border: 1px solid #c9c9c9;
+    font-size: .15rem;
+    line-height: .42rem;
+    text-align: center;
+    background: #fff;
+    color: #29bde0;
+}
+.night {
+    display: block;
+    border: 1px solid #c9c9c9;
+    list-style: none;
+    background: #fff url(images/bg.png) repeat-y 29px;margin-top: .1rem;
+    position: relative;
+}
+.night:before {
+    content: '';
+    border-width: 0 .1rem .1rem .1rem;
+    border-style: solid;
+    border-color:#fff transparent;
+    left: 50%;
+    margin-left: -.1rem;
+    margin-top: -.1rem;
+position: absolute;
+}
+.night li {
+    padding:.1rem .1rem .1rem .6rem;
+    position: relative;
+    margin-left: .1rem;
+
+
+
+}
+/*.night:after {
+ content: '';
+    border-left: 1px solid #c9c9c9;
+    position: absolute;
+    height: 100%;
+    left: 29px;
+    top: 0;
+}*/
+.night li a{
+    position: relative;
+    display: block;background-color: #29bde0;
+    text-align: center;
+    color: #fff;
+    line-height: .38rem;
+}
+.night li a:before {
+   content: '';
+    border-width: 6px 14px 6px 0;
+    border-style: solid;
+    border-color: transparent #29bde0;
+    position: absolute;
+    left: -14px;
+    top: 12px;
+}
+.night li:first-child {
+background:url(images/night.png) no-repeat left 10px;
+-webkit-background-size: .38rem;
+background-size: .38rem;
+}
+
+.night li:nth-child(2) {
+background:url(images/day.png) no-repeat left 10px;
+-webkit-background-size: .38rem;
+background-size: .38rem;
+}
+/**footer*/
+
+footer {    display: flex;
+   bottom: 0;
+    height: 0.7rem;
+    background:rgba(41, 189, 224, 0.4);
+}
+
+footer .btn {
+width: 100%;
+    margin: 0.1rem;
+    border: none;
+border-radius: 7px;
+    font-size: .2rem;
+    line-height: .3rem;
+    color: #fff;
+    background: #fbb435;
+
+}
+
+footer .btn:hover, footer .btn:focus {
+    color: #fff;
+    background: #f5c97b;
+    outline: none;
+}

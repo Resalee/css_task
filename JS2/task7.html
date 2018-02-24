@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task7-桌游精灵</title>
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="task7.css">
+</head>
+
+<body>
+    <header>
+        <a class="menu" href="#"></a>
+    </header>
+    <main>
+        <div class="lastgame"><a href="#">上次游戏：捉鬼猜词版</a></div>
+        <div class="content">
+            <div class="games">
+<div class="cur">
+                    <h3>杀人游戏</h3>
+                    <ul>
+                        <li>
+                            <h4><a href="#" onclick="oBtn()">简化版</a></h4>
+                            <p>有1133个用户正在玩此款游戏</p>
+                        </li>
+                        <li>
+                            <h4><a href="#">警版</a></h4>
+                            <p>有1133个用户正在玩此款游戏</p>
+                        </li>
+                        <li>
+                            <h4><a href="#">3.0版</a></h4>
+                            <p>有1133个用户正在玩此款游戏</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slide">
+                <ul>
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="next"></div>
+        </div>
+    </main>
+    <script>
+        function oBtn() {
+            window.location.href="player.html";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task7-桌游精灵</title>
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="task7.css">
+    <link rel="stylesheet" type="text/css" href="player.css">
+</head>
+
+<body>
+    <header>
+        <a class="menu" href="#"></a>
+        <a class="qahelp" href="#"></a>
+    </header>
+    <main>
+        <div class="assign">玩家配比</div>
+        <div class="players">
+            <div>杀手<span>1</span>人</div>
+            <div>平民<span>7</span>人</div>
+        </div>
+    </main>
+    <footer>
+        <form>
+            <div class="number">请输入玩家数量
+                <input type="text" id="num" value="8"  onkeyup="value=value.replace(/[^\d]/g,'') "
+onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" ><span>玩家数量为4-18</span></div>
+            <button type="button" class="btn">去发牌</button>
+        </form>
+    </footer>
+    <script>
+    var aPlayers = document.getElementsByClassName('players')[0].getElementsByTagName('span');
+    var oBtn = document.getElementsByClassName('btn')[0];
+
+
+    oBtn.onclick = function() {
+        var oNum = document.getElementById('num').value;
+
+        switch (true) {
+            case oNum >= 4 && oNum <= 8:
+                aPlayers[0].innerHTML = 1;
+                aPlayers[1].innerHTML = oNum - 1;
+                break;
+            case oNum >= 9 && oNum <= 11:
+                aPlayers[0].innerHTML = 2;
+                aPlayers[1].innerHTML = oNum - 2;
+                break;
+            case oNum >= 12 && oNum <= 15:
+                aPlayers[0].innerHTML = 3;
+                aPlayers[1].innerHTML = oNum - 3;
+                break;
+            case oNum >= 16 && oNum <= 18:
+                aPlayers[0].innerHTML = 4;
+                aPlayers[1].innerHTML = oNum - 4;
+                break;
+            default:
+                aPlayers[0].innerHTML = "";
+                aPlayers[1].innerHTML = "";
+                alert("请输入正确的玩家数量！");
+                return;
+        }
+        var killer = aPlayers[0].innerHTML;
+        var arr = [];
+        for (var i = 0; i < oNum; i++) {
+            arr[i] = "平民";
+        }
+        for (var i = 0; i < killer; i++) {
+            arr[i] = "杀手";
+        }
+        //乱序
+        for (var i = arr.length; i--;) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = arr[i];
+            arr[i] = arr[j];
+             arr[j] = temp;
+        }
+        localStorage.setItem("result", JSON.stringify(arr));
+        window.location.href="results.html";
+    }
+    </script>
+</body>
+
+</html>

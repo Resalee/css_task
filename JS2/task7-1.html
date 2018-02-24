@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <title>Task7-投票</title>
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="task7.css">
+    <link rel="stylesheet" type="text/css" href="task7-1.css">
+    <script type="text/javascript" src="audio.js"></script>
+    <link rel="stylesheet" type="text/css" href="task7-1-1.css">
+</head>
+
+<body>
+    <header>
+        <h2>投票</h2>
+        <a class="menu" href="#"></a>
+        <a class="closeit" href="#"></a>
+    </header>
+    <main>
+        <div class="prompt">
+            <div class="play">
+                <span>发言讨论结束，大家请投票
+</span>
+                <div class="btn-audio">
+                    <audio id="mp3Btn">
+                        <source src="财富自由.mp3" type="audio/mpeg" />
+                    </audio>
+                </div>
+            </div>
+            <p>点击得票数最多人的头像</p>
+        </div>
+        <ul class="player">
+            <li>
+                <div class="info">
+                    <p class="role">水民</p>
+                    <p class="code">1号</p>
+                </div>
+                <div class="action">
+                    <a class="action1" href="#"></a>
+                    <a class="action2" href="#"></a>
+                    <a class="action3" href="#"></a>
+                    <a class="action4" href="#"></a>
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <p class="role">水民</p>
+                    <p class="code">2号</p>
+                </div>
+                <div class="action">
+                    <a class="action1" href="#"></a>
+                    <a class="action2" href="#"></a>
+                    <a class="action3" href="#"></a>
+                    <a class="action4" href="#"></a>
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <p class="role">警察</p>
+                    <p class="code">3号</p>
+                </div>
+                <div class="action">
+                    <a class="action1" href="#"></a>
+                    <a class="action2" href="#"></a>
+                    <a class="action3" href="#"></a>
+                    <a class="action4" href="#"></a>
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <p class="role">法官</p>
+                    <p class="code">4号</p>
+                </div>
+                <div class="action">
+                    <a class="action1" href="#"></a>
+                    <a class="action2" href="#"></a>
+                    <a class="action3" href="#"></a>
+                    <a class="action4" href="#"></a>
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <p class="role">狙击手</p>
+                    <p class="code">5号</p>
+                </div>
+                <div class="action">
+                    <a class="action1" href="#"></a>
+                    <a class="action2" href="#"></a>
+                    <a class="action3" href="#"></a>
+                    <a class="action4" href="#"></a>
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <p class="role">医生</p>
+                    <p class="code">6号</p>
+                </div>
+                <div class="action">
+                    <a class="action1" href="#"></a>
+                    <a class="action2" href="#"></a>
+                    <a class="action3" href="#"></a>
+                    <a class="action4" href="#"></a>
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <p class="role">杀手</p>
+                    <p class="code">7号</p>
+                </div>
+                <div class="action">
+                    <a class="action1" href="#"></a>
+                    <a class="action2" href="#"></a>
+                    <a class="action3" href="#"></a>
+                    <a class="action4" href="#"></a>
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <p class="role">水民</p>
+                    <p class="code">8号</p>
+                </div>
+                <div class="action">
+                    <a class="action1" href="#"></a>
+                    <a class="action2" href="#"></a>
+                    <a class="action3" href="#"></a>
+                    <a class="action4" href="#"></a>
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <p class="role">水民</p>
+                    <p class="code">9号</p>
+                </div>
+                <div class="action">
+                    <a class="action1" href="#"></a>
+                    <a class="action2" href="#"></a>
+                    <a class="action3" href="#"></a>
+                    <a class="action4" href="#"></a>
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <p class="role">医生</p>
+                    <p class="code">10号</p>
+                </div>
+                <div class="action">
+                    <a class="action1" href="#"></a>
+                    <a class="action2" href="#"></a>
+                    <a class="action3" href="#"></a>
+                    <a class="action4" href="#"></a>
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <p class="role">水民</p>
+                    <p class="code">11号</p>
+                </div>
+                <div class="action">
+                    <a class="action1" href="#"></a>
+                    <a class="action2" href="#"></a>
+                    <a class="action3" href="#"></a>
+                    <a class="action4" href="#"></a>
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <p class="role">狙击手</p>
+                    <p class="code">12号</p>
+                </div>
+                <div class="action">
+                    <a class="action1" href="#"></a>
+                    <a class="action2" href="#"></a>
+                    <a class="action3" href="#"></a>
+                    <a class="action4" href="#"></a>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <div class="vote">
+            <button type="button" class="btn">投死</button>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task7-桌游精灵</title>
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="task7.css">
+    <link rel="stylesheet" type="text/css" href="results.css">
+</head>
+
+<body>
+    <header>
+        <h2>法官日记</h2>
+        <a class="menu" href="#"></a>
+        <a class="closeit" href="#"></a>
+    </header>
+    <main>
+        <ul id="list">
+        </ul>
+    </main>
+    <footer>
+        <button type="button" class="btn">开始游戏</button>
+    </footer>
+    <script>
+
+        var list=document.getElementById('list');
+        var res = window.localStorage.getItem("result");
+        var arr = JSON.parse(res);
+        for (var i=0;i<arr.length;i++){
+             var oLi=document.createElement('li');
+             oLi.innerHTML="<p>"+arr[i]+"</p><p>"+(i+1)+"号</p>";
+             list.appendChild(oLi);
+        }
+
+    </script>
+</body>
+
+</html>

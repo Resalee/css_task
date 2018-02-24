@@ -3,8 +3,11 @@ window.onload = function() {
     var aNavBtn = document.getElementsByClassName('navbar-toggle');
     var aNavItem = document.getElementsByClassName('navbar-collapse');
     aNavBtn[0].onclick = function() {
-        aNavItem[0].style.display=aNavItem[0].style.display != 'block'?'block':'none';
-
+        if (aNavItem[0].style.display != 'block') {
+            aNavItem[0].style.display = 'block';
+        } else {
+            aNavItem[0].style.display = 'none';
+        }
     }
     //carousel
 //1.获取要控制的元素：左右切换a、下面的点击li、内部内容
