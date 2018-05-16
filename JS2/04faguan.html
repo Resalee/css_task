@@ -8,8 +8,8 @@
     <script src="../js/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
     <script src="../js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="task7.css">
-    <link rel="stylesheet" type="text/css" href="results.css">
+    <link rel="stylesheet" type="text/css" href="01home.css">
+    <link rel="stylesheet" type="text/css" href="03results.css">
 </head>
 
 <body>
@@ -26,8 +26,10 @@
         <button type="button" class="btn">开始游戏</button>
     </footer>
     <script>
-
+        var oBack = document.getElementsByClassName('menu')[0];
+        var oClose = document.getElementsByClassName('closeit')[0];
         var list=document.getElementById('list');
+        var oBtn=document.getElementsByTagName('button')[0];
         var res = window.localStorage.getItem("result");
         var arr = JSON.parse(res);
         for (var i=0;i<arr.length;i++){
@@ -35,7 +37,15 @@
              oLi.innerHTML="<p>"+arr[i]+"</p><p>"+(i+1)+"号</p>";
              list.appendChild(oLi);
         }
-
+        oBtn.onclick=function(){
+            window.location.href = "05firstnight.html";
+        }
+        oBack.onclick = function(){
+        window.location.href='03results.html';
+        }
+            oClose.onclick = function(){
+        window.location.href='01home.html';
+    }
     </script>
 </body>
 

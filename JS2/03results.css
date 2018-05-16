@@ -133,22 +133,22 @@ footer .btn:hover, footer .btn:focus {
 /*faguan*/
 #list {
     width: 100%;
-    padding: 0 .02rem;
     margin-top: .2rem;
 }
 
 #list li {
     display: inline-block;
-    width: 23.2%;
+    width: 24.7%;
     margin-left: 4.3%;
     margin-right: 4.3%;
-    margin-bottom: .3rem;
-    text-align: center;border: .03rem solid #fff;
+    margin-bottom: .2rem;
+    text-align: center;
     cursor: pointer;
 }
 
 #list p {
     margin: 0;
+    border: .03rem solid #fff;
 }
 
 #list li p:first-child {
@@ -157,10 +157,48 @@ footer .btn:hover, footer .btn:focus {
     line-height: 100%;
     color: #565656;
     background: #f5c97b;
+    border-bottom: none;
 }
 
 #list li p:last-child {
     font-size: .12rem;
     line-height: .14rem;
     background: #83b09a;
+    border-top: none;
+    margin-bottom: .1rem;
+}
+
+/*killer*/
+.play {
+    height: .41rem;
+    background: #b9e9f5;
+}
+.play span {
+    padding-left: .24rem;
+    line-height: .41rem;
+    font-size: .13rem;
+    color: #464646;
+}
+.prompt p {
+    padding-left: .35rem;
+    margin-bottom: 0;
+    line-height: .4rem;
+    font-size: .12rem;
+    color: #fff;
+}
+.prompt p:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    border-width: .07rem .035rem 0 .035rem;
+    border-color: #b9e9f5 transparent;
+    border-style: solid;
+}
+.killer {
+    padding:0;
+}
+.kill {
+    padding-bottom: .3rem;
+    background: url(images/icon1.png) no-repeat center bottom;
+    margin-bottom: .1rem;
 }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>demo1</title>
+</head>
+<body>
+  <script src="../../js/state-machine.min.js"></script>
+  <script>
+    // var fsm = new StateMachine({
+    //   init:'green',
+    //   transitions:[
+    //    { name: 'panic', from: 'green', to: 'red'   },
+    //   { name: 'calm',  from: 'red',   to: 'green' }
+    //   ],
+    //   methods:{
+    //    onInvalidTransition: function(transition, from, to) {
+    //     throw new Exception("transition not allowed from that state");
+    //   }
+    //   }
+    // });
+    var fsm = new StateMachine({
+    init: 'A',
+    transitions: [
+      { name: 'step',  from: 'A', to: 'B' },
+      { name: 'reset', from: 'B', to: 'A' }
+    ],
+    methods: {
+      onInvalidTransition: function(transition, from, to) {
+       // throw new Exception("transition not allowed from that state");
+       console.log('please try again');
+      }
+    }
+  });
+
+  </script>
+</body>
+</html>

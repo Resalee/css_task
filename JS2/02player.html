@@ -8,8 +8,8 @@
     <script src="../js/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
     <script src="../js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="task7.css">
-    <link rel="stylesheet" type="text/css" href="player.css">
+    <link rel="stylesheet" type="text/css" href="01home.css">
+    <link rel="stylesheet" type="text/css" href="02player.css">
 </head>
 
 <body>
@@ -29,12 +29,15 @@
             <div class="number">请输入玩家数量
                 <input type="text" id="num" value="8"  onkeyup="value=value.replace(/[^\d]/g,'') "
 onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" ><span>玩家数量为4-18</span></div>
+            <button type="button" class="btn">玩家分配</button>
             <button type="button" class="btn">去发牌</button>
         </form>
     </footer>
     <script>
     var aPlayers = document.getElementsByClassName('players')[0].getElementsByTagName('span');
     var oBtn = document.getElementsByClassName('btn')[0];
+    var oPlay = document.getElementsByClassName('btn')[1];
+    var oBack = document.getElementsByClassName('menu')[0];
 
 
     oBtn.onclick = function() {
@@ -79,7 +82,12 @@ onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replac
              arr[j] = temp;
         }
         localStorage.setItem("result", JSON.stringify(arr));
-        window.location.href="results.html";
+    }
+    oPlay.onclick = function() {
+        window.location.href="03results.html";
+    }
+    oBack.onclick = function(){
+        window.location.href='01home.html';
     }
     </script>
 </body>

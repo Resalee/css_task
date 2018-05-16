@@ -8,8 +8,8 @@
     <script src="../js/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
     <script src="../js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="task7.css">
-    <link rel="stylesheet" type="text/css" href="results.css">
+    <link rel="stylesheet" type="text/css" href="01home.css">
+    <link rel="stylesheet" type="text/css" href="03results.css">
 </head>
 
 <body>
@@ -40,7 +40,8 @@
     var oPlayer = document.getElementById('player').getElementsByTagName('span')[0];
     var oKiller = document.getElementById('killer');
     var oOdinary = document.getElementById('odinary');
-
+    var oBack = document.getElementsByClassName('menu')[0];
+    var oClose = document.getElementsByClassName('closeit')[0];
     oBtn.onclick = function() {
         var res = window.localStorage.getItem("result");
         var arr = JSON.parse(res);
@@ -60,7 +61,7 @@
             }
         } else {
             if (oPlayer.innerHTML == arr.length) {
-                window.location.href = "faguan.html";
+                window.location.href = "04faguan.html";
             } else {
                 oOdinary.style.display = 'none';
                 oKiller.style.display = 'none';
@@ -71,6 +72,13 @@
             }
         }
     }
+    oBack.onclick = function(){
+        window.location.href='02player.html';
+    }
+    oClose.onclick = function(){
+        window.location.href='01home.html';
+    }
+
     </script>
 </body>
 

@@ -27,6 +27,7 @@ header .qahelp {
     background-size: contain;
 }
 
+
 /*main*/
 
 body {
@@ -67,6 +68,7 @@ main {
 }
 
 
+
 /**footer*/
 
 footer {
@@ -98,7 +100,8 @@ footer {
 }
 
 footer .btn {
-    width: 100%;
+    float: left;
+    width: 45%;
     margin-top: .1rem;
     margin-bottom: .2rem;
     border: none;
@@ -109,7 +112,12 @@ footer .btn {
     background: #fbb435;
 }
 
-footer .btn:hover, footer .btn:focus {
+footer button:first-of-type {
+    margin-right: 10%;
+}
+
+footer .btn:hover,
+footer .btn:focus {
     color: #fff;
     background: #f5c97b;
     outline: none;

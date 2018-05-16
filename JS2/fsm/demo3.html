@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>demo1</title>
+</head>
+<body>
+  <script src="../../js/state-machine.min.js"></script>
+  <script>
+    var fsm = new StateMachine({
+      init:'hungry',
+      transitions:[
+        {name: 'eat', from: 'hungry', to: 'satisfied'},
+        {name: 'eat', from: 'satisfied', to: 'full'},
+        {name: 'eat', from: 'full', to: 'sick'},
+        {name: 'rest', from: ['hungry', 'satisfied', 'full', 'sick'], to: 'hungry'}
+      ],
+      methods:{
+        onBeforeEat: function(lifecycle, from, to) {
+          console.log('马上吃东西了');
+        },
+        onLeaveHungry: function(lifecycle, from, to){
+          console.log('终于没那么饿了');
+        },
+        onSatisfied: function(lifecycle, from, to){
+          console.log('真开心');
+        },
+        onAfterEat: function(lifecycle, from, to){
+          console.log('我吃得差不多了');
+        },
+        onLeaveState: function(lifecycle, from, to){
+          console.log('状态变了，变之前：'+ lifecycle.from +'，变之后：'+ lifecycle.to);
+        }
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task7-桌游精灵</title>
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
+    <script src="../js/state-machine.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="01home.css">
+    <link rel="stylesheet" type="text/css" href="05first.css">
+</head>
+
+<body>
+    <header>
+        <h2>法官台本</h2>
+        <a class="menu" href="#"></a>
+        <a class="closeit" href="#"></a>
+    </header>
+    <main>
+      <div class="game">
+        <p class="day">第一天</p>
+        <ul class="night">
+            <li onclick="fsm.kill();"><span>杀手杀人</span>
+            </li>
+            <li onclick="fsm.lastwords();"><span>亡灵发表遗言
+            </span></li>
+            <li onclick="fsm.discuss();"><span>玩家依次发言
+            </span></li>
+            <li onclick="fsm.vote();"><span>全民投票</span></li>
+        </ul>
+        </div>
+    </main>
+    <footer>
+        <button type="button" class="btn">结束游戏</button>
+        <button type="button" class="btn">法官日志</button>
+    </footer>
+    <script>
+      var oBack = document.getElementsByClassName('menu')[0];
+      var oClose = document.getElementsByClassName('closeit')[0];
+      var aBtn = document.getElementsByClassName('btn');
+      var aNight=document.getElementsByTagName('ul');
+      var oKiller=aNight[0].getElementsByTagName('li')[0];
+      aBtn[1].onclick=oBack.onclick = function(){
+        window.location.href='04faguan.html';
+        }
+      oClose.onclick = function(){
+        window.location.href='01home.html';
+       }
+
+       var fsm = new StateMachine({
+        init:'none',
+        transitions:[
+        {name:'kill', from: 'none', to: 'dead'},
+        {name:'lastwords', from: 'dead', to: 'ghost'},
+        {name:'discuss', from: 'ghost', to: 'consensus'},
+        {name:'vote', from: 'consensus', to:'verdict'}
+        ],
+        methods:{
+          onKill:function (){
+            window.location.href="06killer.html";
+        },
+        onLastwords:function(){
+          alert('请亡灵发言');
+        },
+        onDiscuss:function(){
+          alert('请大家讨论');
+        },
+        onVote:function(){
+          window.location.href="07vote.html";
+        },
+        onInvalidTransition: function(transition, from, to) {
+        alert('please play in order');
+        },
+        }
+       })
+    </script>
+</body>
+
+</html>

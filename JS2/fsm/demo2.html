@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>demo1</title>
+</head>
+<body>
+  <script src="../../js/state-machine.min.js"></script>
+  <script>
+    var fsm = new StateMachine({
+      init:'hungry',
+      transitions:[
+        {name: 'eat', from: 'hungry', to: 'satisfied'},
+        {name: 'eat', from: 'satisfied', to: 'full'},
+        {name: 'eat', from: 'full', to: 'sick'},
+        {name: 'rest', from: ['hungry', 'satisfied', 'full', 'sick'], to: 'hungry'}
+      ]
+    });
+  </script>
+</body>
+</html>

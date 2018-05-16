@@ -66,9 +66,7 @@ position: absolute;
     padding:.1rem .1rem .1rem .6rem;
     position: relative;
     margin-left: .1rem;
-
-
-
+    cursor: pointer;
 }
 /*.night:after {
  content: '';
@@ -78,14 +76,14 @@ position: absolute;
     left: 29px;
     top: 0;
 }*/
-.night li a{
+.night li span{
     position: relative;
     display: block;background-color: #29bde0;
     text-align: center;
     color: #fff;
     line-height: .38rem;
 }
-.night li a:before {
+.night li span:before {
    content: '';
     border-width: 6px 14px 6px 0;
     border-style: solid;

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task7-杀手杀人</title>
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/state-machine.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="01home.css">
+    <link rel="stylesheet" type="text/css" href="03results.css">
+</head>
+
+<body>
+    <header>
+        <h2>杀手杀人</h2>
+        <a class="closeit" href="#"></a>
+    </header>
+    <main class="killer">
+        <div class="prompt">
+            <div class="play">
+                <span>杀手请睁眼，杀手请选择要杀的对象
+</span>
+
+            </div>
+            <p>点击下方玩家头像，对被杀的玩家进行标记</p>
+        </div>
+        <ul id="list">
+        </ul>
+    </main>
+    <footer>
+         <button type="button" class="btn">确定</button>
+    </footer> <script>
+
+        var list=document.getElementById('list');
+        var res = window.localStorage.getItem("result");
+        var arr = JSON.parse(res);
+        for (var i=0;i<arr.length;i++){
+             var oLi=document.createElement('li');
+             oLi.innerHTML="<p>"+arr[i]+"</p><p>"+(i+1)+"号</p>";
+             list.appendChild(oLi);
+        }
+
+        var fsm = new StateMachine({
+            init: 'live',
+            transitions:[
+                {name: 'kill', from: 'live', to: 'dead'}
+            ],
+            methods:{
+                onKill: function(){
+                    this.click(function(){
+                        $('li').addClass('.kill')
+                    })
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

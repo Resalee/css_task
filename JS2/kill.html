@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <title>Task7-投票</title>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script type="text/javascript" src="js/audio.js"></script>
+    <link rel="stylesheet" type="text/css" href="kill.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="header-title">投票</h2>
+        <a class="bg-link header-menu" href="#"></a>
+        <a class="bg-link header-close" href="#"></a>
+    </header>
+    <main>
+        <div class="prompt">
+            <div class="prompt-play">
+                <span class="prompt-play-info">发言讨论结束，大家请投票</span>
+            </div>
+            <p class="prompt-play-click">点击得票数最多人的头像</p>
+        </div>
+        <ul class="player">
+            <li class="player-card">
+                <div class="player-info">
+                    <p class="player-role">水民</p>
+                    <p class="player-number">1号</p>
+                </div>
+                <div class="player-action">
+                    <a class="player-actions player-action1" href="#"></a>
+                </div>
+            </li>
+            <li class="player-card">
+                <div class="player-info">
+                    <p class="player-role">水民</p>
+                    <p class="player-number">2号</p>
+                </div>
+                <div class="player-action">
+                    <a class="player-actions player-action1" href="#"></a>
+                </div>
+            </li>
+            <li class="player-card">
+                <div class="player-info">
+                    <p class="player-role">警察</p>
+                    <p class="player-number">3号</p>
+                </div>
+                <div class="player-action">
+                    <a class="player-actions player-action1" href="#"></a>
+                </div>
+            </li>
+            <li class="player-card">
+                <div class="player-info">
+                    <p class="player-role">法官</p>
+                    <p class="player-number">4号</p>
+                </div>
+                <div class="player-action">
+                    <a class="player-actions player-action1" href="#"></a>
+                    <a class="player-actions player-action2" href="#"></a>
+                    <a class="player-actions player-action3" href="#"></a>
+                    <a class="player-actions player-action4" href="#"></a>
+                </div>
+            </li>
+            <li class="player-card">
+                <div class="player-info">
+                    <p class="player-role">狙击手</p>
+                    <p class="player-number">5号</p>
+                </div>
+                <div class="player-action">
+                    <a class="player-actions player-action1" href="#"></a>
+                    <a class="player-actions player-action2" href="#"></a>
+                    <a class="player-actions player-action3" href="#"></a>
+                    <a class="player-actions player-action4" href="#"></a>
+                </div>
+            </li>
+            <li class="player-card">
+                <div class="player-info">
+                    <p class="player-role">医生</p>
+                    <p class="player-number">6号</p>
+                </div>
+                <div class="player-action">
+                    <a class="player-actions player-action1" href="#"></a>
+                    <a class="player-actions player-action2" href="#"></a>
+                    <a class="player-actions player-action3" href="#"></a>
+                    <a class="player-actions player-action4" href="#"></a>
+                </div>
+            </li>
+            <li class="player-card">
+                <div class="player-info">
+                    <p class="player-role">杀手</p>
+                    <p class="player-number">7号</p>
+                </div>
+                <div class="player-action">
+                    <a class="player-actions player-action1" href="#"></a>
+                    <a class="player-actions player-action2" href="#"></a>
+                    <a class="player-actions player-action3" href="#"></a>
+                    <a class="player-actions player-action4" href="#"></a>
+                </div>
+            </li>
+            <li class="player-card">
+                <div class="player-info">
+                    <p class="player-role">水民</p>
+                    <p class="player-number">8号</p>
+                </div>
+                <div class="player-action">
+                    <a class="player-actions player-action1" href="#"></a>
+                    <a class="player-actions player-action2" href="#"></a>
+                    <a class="player-actions player-action3" href="#"></a>
+                    <a class="player-actions player-action4" href="#"></a>
+                </div>
+            </li>
+            <li class="player-card">
+                <div class="player-info">
+                    <p class="player-role">水民</p>
+                    <p class="player-number">9号</p>
+                </div>
+                <div class="player-action">
+                    <a class="player-actions player-action1" href="#"></a>
+                    <a class="player-actions player-action2" href="#"></a>
+                    <a class="player-actions player-action3" href="#"></a>
+                    <a class="player-actions player-action4" href="#"></a>
+                </div>
+            </li>
+            <li class="player-card">
+                <div class="player-info">
+                    <p class="player-role">医生</p>
+                    <p class="player-number">10号</p>
+                </div>
+                <div class="player-action">
+                    <a class="player-actions player-action1" href="#"></a>
+                    <a class="player-actions player-action2" href="#"></a>
+                    <a class="player-actions player-action3" href="#"></a>
+                    <a class="player-actions player-action4" href="#"></a>
+                </div>
+            </li>
+            <li class="player-card">
+                <div class="player-info">
+                    <p class="player-role">水民</p>
+                    <p class="player-number">11号</p>
+                </div>
+                <div class="player-action">
+                    <a class="player-actions player-action1" href="#"></a>
+                    <a class="player-actions player-action2" href="#"></a>
+                    <a class="player-actions player-action3" href="#"></a>
+                    <a class="player-actions player-action4" href="#"></a>
+                </div>
+            </li>
+            <li class="player-card">
+                <div class="player-info">
+                    <p class="player-role">狙击手</p>
+                    <p class="player-number">12号</p>
+                </div>
+                <div class="player-action">
+                    <a class="player-actions player-action1" href="#"></a>
+                    <a class="player-actions player-action2" href="#"></a>
+                    <a class="player-actions player-action3" href="#"></a>
+                    <a class="player-actions player-action4" href="#"></a>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <div class="vote">
+            <button type="button" class="btn-success">投死</button>
+        </div>
+    </footer>
+</body>
+
+</html>
