@@ -1,0 +1,43 @@
+body {
+    background: #1abc9c;
+}
+
+#login {
+    width: 30%;
+    margin: 10% auto;
+    padding: 10px;
+    border-radius: 6px;
+    background: #edeff1;
+}
+
+#login input,
+#btn {
+    display: block;
+    border: none;
+    width: 90%;
+    margin: 5%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#login input:focus {
+    outline-color: #1abc9c;
+}
+
+#btn {
+    background: #1abc9c;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#btn:focus {
+    outline-color: #16a085;
+    border-radius: 4px;
+}
+
+#msg {
+    text-align: center;
+    color: #e74c3c;
+}
